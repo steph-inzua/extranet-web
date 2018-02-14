@@ -1,0 +1,49 @@
+//- Plantilla
+include utiles
+
+- var dir = "";
+
+block valores
+
+doctype html
+html( lang="es" )
+	head
+		block titulo
+			title= titulo
+
+		//- MetaEtiquetas
+		each etiqueta in metaetiquetas
+			meta&attributes( etiqueta )
+
+		//- +estilo("css/uikit.min.css")
+		include estilos.pug
+		block estilos
+
+	body
+		include /partes/seguimiento
+
+		#pagina
+
+			//- header#encabezado
+				block encabezado
+				include /partes/encabezado
+
+			//- header#navegacion
+				block navegacion
+				include /partes/navegacion
+
+			section#contenido
+				block contenido
+
+			footer#pie
+				block pie
+				include /partes/pie
+
+		//- #emergentes
+			block emergentes
+			include /partes/emergentes
+
+		include guiones.pug
+		block guiones
+
+

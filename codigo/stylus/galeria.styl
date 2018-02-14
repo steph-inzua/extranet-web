@@ -1,0 +1,151 @@
+@require "base/utiles"
+@require "nib"
+
+
+#slider
+	min-height 520px
+	//height 100vh
+	/*display flex
+	align-items center
+	justify-content center*/
+	display block
+	padding-top 140px
+	height auto
+ 
+	.contenedor
+		max-width 1270px
+		
+		
+	+hasta( escritorio )
+		display block
+		padding-top 0
+	.column
+		float left
+		width 50%
+		box-sizing border-box
+		padding 0 15px
+		margin-bottom 15px
+		+hasta( escritorio )
+			float none
+			width 100%
+			margin 0px 0 80px 0
+			padding 0 
+	.galeria-grupo
+		
+		
+		
+		&.videos
+			a
+				position relative
+				display block
+				&:after
+					content ''
+					background url('../img/ico-play.png') no-repeat
+					display block
+					width 68px
+					height 68px
+					position absolute
+					left 50%
+					top 50%
+					transform translate(-50%, -50%)
+					opacity 0.5
+					
+	.cnt
+		padding 0
+		box-sizing border-box
+		position relative
+		background rgba(0,0,0,.45)
+		+hasta( escritorio )
+			background rgba(0,0,0,.8)
+		.logo-conciertos
+			position relative 
+			z-index 3
+			top -55px
+			height 120px
+			
+			display flex
+			align-items center
+			justify-content center
+			@media( max-width: 425px )
+				top -45px
+				height 90px
+		.logo-concierto-bry
+			left 50%
+			transform translate(-50%, -15px)
+			position relative
+			z-index 6
+		.galeria-list
+			text-align center
+			box-sizing border-box
+			padding 0 15px 0 15px
+			position relative
+			top -50px
+			@media( max-width: 425px )
+				padding 0 10px
+			li
+				display inline-block
+				background negro
+				margin 15px 12px
+				@media( max-width: 425px )
+					margin 5px 5px
+				img
+					opacity 0.3
+					display block
+					transition all .4s
+				a
+					display block
+					width 110px
+				a:hover
+					img
+						opacity 1
+					&:after
+						opacity 1
+
+
+.border-horiz-box
+	&:after
+		height 13px
+		width 99.7%
+		z-index 2
+		background-size auto 100% 
+	&:before
+		height 13px
+		width 99.7%
+		z-index 2
+		background-size auto 100% 
+ 
+.border-vert-box
+	&:after
+		width 13px
+		height 100%
+		background-size 100% auto
+		
+	&:before
+		width 13px
+		height 100%
+		z-index 1
+		background-size 100% auto
+//fancy
+.fancybox-skin
+	border none
+	background none
+	
+
+.fancybox-close
+	background url('../img/close-pop.png') no-repeat
+	top 0px
+	right 0px
+.fancybox-nav span
+	visibility visible
+.fancybox-next span
+	right -60px
+	background url('../img/right-1.png') no-repeat
+.fancybox-prev span
+	left -60px
+	background url('../img/left-1.png') no-repeat
+
+/*@media screen and ( max-height: 700px )
+	#slider
+		display block
+		padding-top 200px
+		height auto*/

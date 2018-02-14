@@ -1,0 +1,417 @@
+
+/* line 297 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\galeria.styl */
+
+/* line 1 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\stylus\lib\functions\index.styl */
+
+/* line 105 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\stylus\lib\functions\index.styl */
+
+/* line 1 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\base\utiles.styl */
+
+/* line 15 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\base\utiles.styl */
+
+/* line 147 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\index.styl */
+
+/* line 10 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\index.styl */
+
+/* line 1 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\border.styl */
+
+/* line 53 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\border.styl */
+
+/* line 1 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\border-radius.styl */
+
+/* line 28 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\border-radius.styl */
+
+/* line 1 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\clearfix.styl */
+
+/* line 4 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\clearfix.styl */
+
+/* line 487 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\color-image.styl */
+
+/* line 196 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\color-image.styl */
+
+/* line 1 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\flex.styl */
+
+/* line 90 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\flex.styl */
+
+/* line 147 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\gradients.styl */
+
+/* line 11 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\gradients.styl */
+
+/* line 1 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\config.styl */
+
+/* line 7 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\config.styl */
+
+/* line 487 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\iconic.styl */
+
+/* line 25 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\iconic.styl */
+
+/* line 1 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\image.styl */
+
+/* line 19 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\image.styl */
+
+/* line 147 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\normalize\index.styl */
+
+/* line 8 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\normalize\index.styl */
+
+/* line 487 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\normalize\base.styl */
+
+/* line 19 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\normalize\base.styl */
+
+/* line 487 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\normalize\html5.styl */
+
+/* line 6 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\normalize\html5.styl */
+
+/* line 487 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\normalize\links.styl */
+
+/* line 30 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\normalize\links.styl */
+
+/* line 487 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\normalize\text.styl */
+
+/* line 7 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\normalize\text.styl */
+
+/* line 487 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\normalize\embed.styl */
+
+/* line 17 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\normalize\embed.styl */
+
+/* line 487 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\normalize\groups.styl */
+
+/* line 69 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\normalize\groups.styl */
+
+/* line 487 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\normalize\forms.styl */
+
+/* line 7 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\normalize\forms.styl */
+
+/* line 487 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\normalize\tables.styl */
+
+/* line 20 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\normalize\tables.styl */
+
+/* line 1 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\overflow.styl */
+
+/* line 66 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\overflow.styl */
+
+/* line 487 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\positions.styl */
+
+/* line 78 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\positions.styl */
+
+/* line 487 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\reset.styl */
+
+/* line 5 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\reset.styl */
+
+/* line 147 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\text\index.styl */
+
+/* line 12 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\text\index.styl */
+
+/* line 1 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\text\aliases.styl */
+
+/* line 9 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\text\aliases.styl */
+
+/* line 1 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\text\ellipsis.styl */
+
+/* line 8 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\text\ellipsis.styl */
+
+/* line 1 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\text\hide-text.styl */
+
+/* line 9 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\text\hide-text.styl */
+
+/* line 1 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\text\replace-text.styl */
+
+/* line 2 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\text\replace-text.styl */
+
+/* line 487 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\text\shadow-stroke.styl */
+
+/* line 523 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\text\shadow-stroke.styl */
+
+/* line 487 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\vendor.styl */
+
+/* line 11 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\vendor.styl */
+
+/* line 1 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\config.styl */
+
+/* line 28 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\config.styl */
+
+/* line 1 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\nib\lib\nib\size.styl */
+
+/* line 5 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\galeria.styl */
+#slider {
+  min-height: 520px;
+/*display flex
+	align-items center
+	justify-content center*/
+  display: block;
+  padding-top: 140px;
+  height: auto;
+}
+
+/* line 15 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\galeria.styl */
+#slider .contenedor {
+  max-width: 1270px;
+}
+@media only screen and (max-width: 768px) {
+
+/* line 98 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\base\utiles.styl */
+  #slider {
+    display: block;
+    padding-top: 0;
+  }
+}
+
+/* line 22 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\galeria.styl */
+#slider .column {
+  float: left;
+  width: 50%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 15px;
+  margin-bottom: 15px;
+}
+@media only screen and (max-width: 768px) {
+
+/* line 98 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\base\utiles.styl */
+  #slider .column {
+    float: none;
+    width: 100%;
+    margin: 0px 0 80px 0;
+    padding: 0;
+  }
+}
+
+/* line 33 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\galeria.styl */
+
+/* line 37 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\galeria.styl */
+
+/* line 38 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\galeria.styl */
+#slider .galeria-grupo.videos a {
+  position: relative;
+  display: block;
+}
+
+/* line 41 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\galeria.styl */
+#slider .galeria-grupo.videos a:after {
+  content: '';
+  background: url("../img/ico-play.png") no-repeat;
+  display: block;
+  width: 68px;
+  height: 68px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+}
+
+/* line 53 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\galeria.styl */
+#slider .cnt {
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  background: rgba(0,0,0,0.45);
+}
+@media only screen and (max-width: 768px) {
+
+/* line 98 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\base\utiles.styl */
+  #slider .cnt {
+    background: rgba(0,0,0,0.8);
+  }
+}
+
+/* line 60 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\galeria.styl */
+#slider .cnt .logo-conciertos {
+  position: relative;
+  z-index: 3;
+  top: -55px;
+  height: 120px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+@media (max-width: 425px) {
+
+/* line 69 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\galeria.styl */
+  #slider .cnt .logo-conciertos {
+    top: -45px;
+    height: 90px;
+  }
+}
+
+/* line 72 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\galeria.styl */
+#slider .cnt .logo-concierto-bry {
+  left: 50%;
+  -webkit-transform: translate(-50%, -15px);
+  -moz-transform: translate(-50%, -15px);
+  -o-transform: translate(-50%, -15px);
+  -ms-transform: translate(-50%, -15px);
+  transform: translate(-50%, -15px);
+  position: relative;
+  z-index: 6;
+}
+
+/* line 77 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\galeria.styl */
+#slider .cnt .galeria-list {
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 15px 0 15px;
+  position: relative;
+  top: -50px;
+}
+@media (max-width: 425px) {
+
+/* line 83 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\galeria.styl */
+  #slider .cnt .galeria-list {
+    padding: 0 10px;
+  }
+}
+
+/* line 85 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\galeria.styl */
+#slider .cnt .galeria-list li {
+  display: inline-block;
+  background: #000;
+  margin: 15px 12px;
+}
+@media (max-width: 425px) {
+
+/* line 89 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\galeria.styl */
+  #slider .cnt .galeria-list li {
+    margin: 5px 5px;
+  }
+}
+
+/* line 91 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\galeria.styl */
+#slider .cnt .galeria-list li img {
+  opacity: 0.3;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  filter: alpha(opacity=30);
+  display: block;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+/* line 95 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\galeria.styl */
+#slider .cnt .galeria-list li a {
+  display: block;
+  width: 110px;
+}
+
+/* line 98 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\galeria.styl */
+
+/* line 99 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\galeria.styl */
+#slider .cnt .galeria-list li a:hover img {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+
+/* line 101 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\galeria.styl */
+#slider .cnt .galeria-list li a:hover:after {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+
+/* line 105 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\galeria.styl */
+
+/* line 106 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\galeria.styl */
+.border-horiz-box:after {
+  height: 13px;
+  width: 99.7%;
+  z-index: 2;
+  -webkit-background-size: auto 100%;
+  -moz-background-size: auto 100%;
+  background-size: auto 100%;
+}
+
+/* line 111 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\galeria.styl */
+.border-horiz-box:before {
+  height: 13px;
+  width: 99.7%;
+  z-index: 2;
+  -webkit-background-size: auto 100%;
+  -moz-background-size: auto 100%;
+  background-size: auto 100%;
+}
+
+/* line 117 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\galeria.styl */
+
+/* line 118 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\galeria.styl */
+.border-vert-box:after {
+  width: 13px;
+  height: 100%;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  background-size: 100% auto;
+}
+
+/* line 123 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\galeria.styl */
+.border-vert-box:before {
+  width: 13px;
+  height: 100%;
+  z-index: 1;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  background-size: 100% auto;
+}
+
+/* line 129 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\galeria.styl */
+.fancybox-skin {
+  border: none;
+  background: none;
+}
+
+/* line 134 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\galeria.styl */
+.fancybox-close {
+  background: url("../img/close-pop.png") no-repeat;
+  top: 0px;
+  right: 0px;
+}
+
+/* line 138 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\galeria.styl */
+.fancybox-nav span {
+  visibility: visible;
+}
+
+/* line 140 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\galeria.styl */
+.fancybox-next span {
+  right: -60px;
+  background: url("../img/right-1.png") no-repeat;
+}
+
+/* line 143 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\galeria.styl */
+.fancybox-prev span {
+  left: -60px;
+  background: url("../img/left-1.png") no-repeat;
+}
+
+/* line 147 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\galeria.styl */
+/*@media screen and ( max-height: 700px )
+	#slider
+		display block
+		padding-top 200px
+		height auto*/

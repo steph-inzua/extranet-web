@@ -1,0 +1,106 @@
+blanco = white
+negro = black
+plomo = #979797
+plomo2 = #6e6e6e
+plomo3 = #535353
+plomo4 = #393836
+plomo5 = #777777
+
+morado1 = #4c3248
+morado2 = #41273d
+morado3 = #9f1489
+morado4 = #b720a4
+morado5 = #eabde4
+morado6 = #a269a2
+morado7 = #6c276a
+morado8 = #690c5a
+morado9 = #98398a
+
+naranja1 = #fca22f
+naranja2 = #fd8e00
+
+lila1 = #c2b4c0
+lila2 = #be66b1
+lila3 = #bc95b6
+lila4 = #8d5d85
+gris1 = #f3f2f7
+gris2 = #a2a1a4
+gris3 = #b1b1af
+
+
+crema1 = #916a38
+crema2 = #e7ae65
+crema3 = #f0eaea
+crema4 = #a67c3b
+crema5 = #de9f4d
+// status
+aprobado = #82a664
+espera = #5ac4f4
+rechazado = #d03333
+todo = #ea8a3c
+
+
+// mixin para fuentes
+ruta-fuente( archivo )
+  return "../fonts/" + archivo
+
+fuente( nombre, archivo, peso = normal, estilo = normal )
+	@font-face
+		font-family nombre
+		src url( ruta-fuente( archivo + ".eot" ))
+		src url( ruta-fuente( archivo + ".eot?#iefix" )) format( "embedded-opentype" ),
+			url( ruta-fuente( archivo + ".woff" )) format("woff" ),
+			url( ruta-fuente( archivo + ".ttf" )) format("truetype" ),
+			url( ruta-fuente( archivo + ".svg#" + nombre )) format( "svg" )
+		font-weight peso
+		font-style estilo
+
+	@media screen and ( -webkit-min-device-pixel-ratio: 0 )
+		@font-face
+			font-family nombre
+			src url(font-url(archivo + ".svg#"+ family)) format("svg")
+
+
+// media Queries
+ancho-movil = 640px
+ancho-escritorio = 768px
+
+en_pantalla = "only screen"
+minimo = "min-width: "
+maximo = "max-width: "
+
+
+media_queries = {
+  movil  : en_pantalla + " and (" + maximo +  ancho-movil + ")",
+  tactil  : en_pantalla + " and (" + minimo +  ancho-movil + ")",
+  escritorio : en_pantalla + " and (" + minimo +  ancho-escritorio + ")",
+}
+
+media_queries2 = {
+  movil  : en_pantalla + " and (" + maximo +  ancho-movil + ")",
+  tactil  : en_pantalla + " and (" + maximo +  ancho-movil + ")",
+  escritorio : en_pantalla + " and (" + maximo +  ancho-escritorio + ")",
+}
+
+desde( medidas )
+	condiciones = ()
+	for medida in medidas
+		push( condiciones, media_queries[ medida ])
+	conditions = join( ", ", condiciones )
+	@media condiciones
+		{block}
+
+hasta( medidas )
+	condiciones = ()
+	for medida in medidas
+		push( condiciones, media_queries2[ medida ])
+	conditions = join( ", ", condiciones )
+	@media condiciones
+		{block}
+
+/* pendiente */
+sombra( angulo, distancia, extension, color )
+	dx = distancia * cos( angulo )
+	dy = distancia * sin( angulo )
+	box-shadow (round(dx))px (round(dy))px extension color
+

@@ -1,0 +1,188 @@
+{% extends 'base.twig' %}
+
+{% block pagina %}
+
+<header id="header">
+	{% block encabezado %}
+		<div class="contenedor">
+
+			<nav class="nav-notifications">
+				<button class="control-menu">
+					<span></span>
+				</button>
+
+				<ul class="nav-noti-list">
+					<li class="noti-active noti-1">
+						<a href="#">
+							<div class="noti-categoria">
+								Notificaciones <span class="number"> <span class="value">11</span></span>
+							</div>
+						</a>
+						<div class="subnoti">
+							<article>
+								<a href="#" class="no-visit">
+									<div class="subnoti-item">
+										<p>Se ha agregado nuevo presupuesto</p>
+										<div class="subnoti-detail"><span class="logo">Cencosud</span> | <span title="Martes 29 de agosto del 2017 a las 9:00">hace 1 hora</span>  </div>
+									</div>
+								</a>
+								<div class="close-subnoti">
+									<button class="close" data-tooltip="Eliminar"  data-placement="bottom" >X</button>
+								</div>
+							</article>
+							<article>
+								<a href="#" class="no-visit">
+									<div class="subnoti-item">
+										<p>Se ha agregado nuevo presupuesto</p>
+										<div class="subnoti-detail"><span class="logo">Cencosud</span> | <span title="Martes 29 de agosto del 2017 a las 9:00">hace 1 hora</span>  </div>
+									</div>
+								</a>
+								<div class="close-subnoti">
+									<button class="close" data-tooltip="Eliminar"  data-placement="bottom" >X</button>
+								</div>
+							</article>
+						</div>
+					</li>
+					<li class="noti-2">
+						<a href="#">
+							<div class="noti-categoria">
+								Notificaciones <span class="number"> <span class="value">0</span></span>
+							</div>
+						</a>
+						<div class="subnoti">
+							<article>
+								<a href="#" class="no-visit">
+									<div class="subnoti-item">
+										<p>Se ha agregado nuevo presupuesto</p>
+										<div class="subnoti-detail"><span class="logo">Cencosud</span> | <span title="Martes 29 de agosto del 2017 a las 9:00">hace 1 hora</span>  </div>
+									</div>
+								</a>
+								<div class="close-subnoti">
+									<button class="close" data-tooltip="Eliminar"  data-placement="bottom" >X</button>
+								</div>
+							</article>
+						</div>
+					</li>
+					<li class="noti-active noti-1">
+						<a href="#">
+							<div class="noti-categoria">
+								Notificaciones <span class="number"> <span class="value">3</span></span>
+							</div>
+						</a>
+						<div class="subnoti">
+							<article>
+								<a href="#" class="no-visit">
+									<div class="subnoti-item">
+										<p>Se ha agregado nuevo presupuesto</p>
+										<div class="subnoti-detail"><span class="logo">Cencosud</span> | <span title="Martes 29 de agosto del 2017 a las 9:00">hace 1 hora</span>  </div>
+									</div>
+								</a>
+								<div class="close-subnoti">
+									<button class="close" data-tooltip="Eliminar"  data-placement="bottom" >X</button>
+								</div>
+							</article>
+
+
+							<article>
+								<a href="#" class="no-visit">
+									<div class="subnoti-item">
+										<p>Se ha agregado nuevo presupuesto </p>
+										<div class="subnoti-detail"><span class="logo">Cencosud</span> | <span title="Lunes 28 de agosto del 2017 a las 13:00">hace 1 hora</span>  </div>
+									</div>
+								</a>
+								<div class="close-subnoti">
+									<button class="close" data-tooltip="Eliminar"  data-placement="bottom" >X</button>
+								</div>
+							</article>
+
+
+							<article>
+								<a href="#">
+									<div class="subnoti-item">
+										<p>Se ha agregado nuevo presupuesto</p>
+										<div class="subnoti-detail"><span class="logo">Cencosud</span> | <span title="Lunes 28 de agosto del 2017 a las 11:00">hace 1 hora</span> </div>
+									</div>
+								</a>
+								<div class="close-subnoti">
+									<button class="close" data-tooltip="Eliminar"  data-placement="bottom" >X</button>
+								</div>
+							</article>
+
+							<article>
+								<a href="#">
+									<div class="subnoti-item">
+										<p>Se ha agregado nuevo presupuesto</p>
+										<div class="subnoti-detail"><span class="logo">Cencosud</span> | <span title="Lunes 28 de agosto del 2017 a las 8:40">hace 1 hora</span>  </div>
+									</div>
+								</a>
+								<div class="close-subnoti">
+									<button class="close" data-tooltip="Eliminar"  data-placement="bottom">X</button>
+								</div>
+							</article>
+						</div>
+					</li>
+				</ul>
+			</nav>
+			<aside class="buscador">
+				<form method="post" class="search">
+					<input type="submit" name="" class="submit">
+					<input type="text" class="text" name="" placeholder="Buscar" /> 
+				</form>
+			</aside>
+			<h1 class="logo">
+				<a href="index.html"><img src="img/logo-atk-v2.png" alt="Atk" /></a>
+			</h1>
+		</div>
+	{% endblock %}
+</header>
+<section id="header-filter">
+	<div class="contenedor">
+		<div class="title-sec">
+			<h3>Presupuestos  <span class="line">|</span> <span class="date">2017</span></h3>
+		</div>
+		<div class="filter-all">
+			<form>
+				<div class="sel select-option select-anio">
+					<select name="anio" id="anio">
+						<option value="">Año</option>
+						<option value="1">2017</option>
+						<option value="2">2016</option>
+						<option value="3">2015</option>
+						<option value="4">2014</option>
+						<option value="5">2013</option>
+					</select>
+				</div>
+
+				<div class="sel select-option select-mes">
+					<select name="mes" id="mes">
+						<option value="">Mes</option>
+						<option value="2">Enero</option>
+						<option value="3">Febrero</option>
+						<option value="4">Marzo</option>
+						<option value="5">Abril</option>
+					</select>
+				</div>
+
+				<div class="sel select-option select-cliente">
+					<select name="cliente" id="cliente">
+						<option value="">Cliente</option>
+						<option value="2">Cencosud</option>
+						<option value="3">Unilever</option>
+						<option value="4">Financiero</option>
+					</select>
+				</div>
+			</form>
+		</div>
+	</div>
+</section>
+<section class="pagina">
+	
+		{% block cuerpo %}
+		
+		{% endblock %}
+
+</section>
+
+
+
+{% endblock %}

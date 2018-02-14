@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+
+	{% for etiqueta in metaetiquetas %}
+		<meta{% for clave, valor in etiqueta %} {{ clave }}="{{ valor }}" {% endfor %}/>
+	{% endfor %}
+
+	<link rel="icon" href="img/icono.png" type="image/png">
+	<link rel="shortcut icon" href="img/icono.png" />
+
+	<title>{{ titulo }}</title>
+
+	<link rel="stylesheet" href="css/general.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet" />
+	{% block css %}{% endblock %}
+	<script>
+		document.createElement( "picture" );
+	</script>
+</head>
+<body>
+	{# {% include 'seguimiento.twig' %} #}
+	{% block seguimiento %}{% endblock %}
+	
+	<div id="pedido-new">
+		
+		<div class="container-new">
+			<button class="button button-close"><span class="x">X</span> <span class="back"> < </span></button>
+			<h3>DESCRIPCIÓN  DEL PEDIDO</h3>
+
+
+			<div class="form-pedido">
+				<div class="label-group">
+					<div class="label label-group-display">
+						<label>Item</label>
+						<input type="text" name="" class="campo">
+					</div>
+				</div>
+
+				<div class="label-group">
+					<div class="label label-number">
+						<label>Tiempo estimado en días</label>
+						<div class="quantity">
+							<input type="number"  step="1" name="" min="1" max="125" value="125" class="campo" max-length="3">
+						</div>
+					</div>
+				</div>
+
+				<div class="label-group">
+					<div class="label label-group-display">
+						<label>Detalle</label>
+						<textarea class="campo" rows="3"></textarea>
+					</div>
+				</div>
+
+				<div class="label-group">
+					<div class="label label-number label-number1">
+						<label>Hosting<br>en meses</label>
+						<div class="quantity">
+							<input type="number"  step="1" name="" min="1" max="12" value="12" class="campo campo-number" max-length="2">
+						</div>
+					</div>
+
+					<div class="label por-mes">
+						<label>Monto por mes</label>
+						<input type="text" name="" class="campo monto" value="S/.">
+					</div>
+
+				</div>
+
+				<div class="label-group">
+					<div class="label">
+						<label>Inversión total del proyecto</label>
+						
+					</div>
+					<div class="label">
+						<input type="text" name="" class="campo" value="S/.">
+					</div>
+
+				</div>
+
+				<div class="label-group">
+					<div class="label envio">
+						<input type="submit" name="" value="Guardar item" class="enviar">
+					</div>
+				</div>
+			</div>
+		</div>
+ 	</div>
+ 
+	<aside id="nav-left">
+		<div class="nav-left-cnt">
+			<div class="user">
+				<span class="user-img">
+					<img src="img/icons/usuario-ico.png" alt="usuario">
+				</span>
+				<div class="user-dates">
+					<p>Fulanito sjd</p>
+					<button class="close-session button button-1">Cerrar sesión</button>
+				</div>
+			</div>
+
+			<nav class="nav-user">
+				<ul>
+					<li>
+
+						<input type="checkbox" id="controles">
+						<label class="subnav subnav-item">
+							<a><span class="tit">Otros sistemas</span></a>
+						</label>
+						<ul>
+							<li><a href="#">Matrices</a></li>
+							<li><a href="#">Matrices</a></li>
+						</ul>
+					</li>
+					<li><a href="#"><span class="tit">Otros sistemas</span></a></li>
+					<li><a href="#"><span class="tit">Otros sistemas</span></a></li>
+					
+				</ul>
+
+				<div class="other-nav">
+					<a href="#" class="button button-purple"><img src="img/icons/icono-raro2.jpg"><span>Botón botón</span></a>
+				</div>
+
+				
+			</nav>
+
+			<div class="icons-bottom">
+				<ul>
+					<li><a href="#"><img src="img/icons/ico-bottom-1.png" /></a></li>
+					<li><a href="#"><img src="img/icons/ico-bottom-2.png" /></a></li>
+					<li><a href="#"><img src="img/icons/ico-bottom-3.png" /></a></li>
+				</ul>
+			</div>
+		</div>
+	</aside>
+	<section id="main-right">
+		{% block pagina %}{% endblock %}
+
+		
+	</section>
+
+	{#<div class="msg-confirmation">
+		<div class="box">
+			<div class="title-msg">
+				<p><img src="img/icons/alerta-1.png" />Hay campos que no están llenos</p>
+			</div>
+			<div class="pregunta">
+				<p>¿Guardar de todas maneras?</p>
+				<button>Si</button>
+				<button>No</button>
+			</div>
+		</div>
+
+	</div>#}
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  	<script src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/picturefill.min.js" async></script>
+	<script type="text/javascript" src="js/general.js" async defer></script>
+  	{% block js %}
+	{% endblock %}
+</body>
+</html>

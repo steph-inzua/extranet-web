@@ -1,0 +1,122 @@
+//Amplitudes
+
+@ancho-escritorio: 1200;
+@ancho-tableta: 640;
+@ancho-celular: 240;
+
+@celular : ~"screen and ( min-width: @{ancho-celular}px )";
+@tableta : ~"screen and ( min-width: @{ancho-tableta}px )";
+@escritorio : ~"screen and ( min-width: @{ancho-escritorio}px )";
+
+@grande : @escritorio;
+@mediano : @tableta;
+@chico : @celular;
+
+.desde(@medida; @reglas) when ( isnumber(@medida) ) {
+	@media screen and (~"min-width: @{medida}px"){
+		@reglas();
+	}
+}
+
+.desde(@medida; @reglas) when ( isstring(@medida) ){
+	@media @medida{
+		@reglas();
+	}
+}
+
+.hasta(@medida; @reglas) when ( isnumber(@medida) ) {
+	@media screen and (~"max-width: @{medida}px"){
+		@reglas();
+	}
+}
+
+
+
+// Fuentes
+.fuente(@nombre, @archivo, @peso: normal, @estilo: normal){
+	@font-face {
+		font-family: @nombre;
+		src: url(~"../fnt/@{archivo}.eot");
+		src: url(~"../fnt/@{archivo}.eot?#iefix") format('embedded-opentype'),
+			url(~"../fnt/@{archivo}.svg#@{archivo}") format('svg'),
+			url(~"../fnt/@{archivo}.woff2") format('woff2'),
+			url(~"../fnt/@{archivo}.woff") format('woff'),
+			url(~"../fnt/@{archivo}.ttf") format('truetype');
+		font-style: @estilo;
+		font-weight: @peso;
+	}
+}
+
+// Colores
+@rojo: #db1b00;
+@rojo2: #ed1c24;
+@gris: #333333;
+@gris2: #aaaaaa;
+@amarillo: #ffcc00;
+
+// Funciones
+
+// Centra un bloque horizontalmente respecto a su contenedor
+.centrar(){
+	display:  block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+// Mantiene los margenes de los elementos hijos dentro del contenedor
+.encierra-margenes(){
+	&::before, &::after{
+		content: " ";
+		display: table;
+		clear: both;
+	}
+}
+
+
+// Crea un contenedor que calza con la imagen proporcionada
+.figura(@archivo){
+	@ancho : image-width("./recursos/imagenes/@{archivo}");
+	@alto : image-height("./recursos/imagenes/@{archivo}");
+
+	background-image: url(~"../img/@{archivo}");
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+	width: @ancho;
+	height: @alto;
+}
+
+// Fuerza la proporción según la imagen proporcionada
+.proporcion(@archivo){
+	position: relative;
+
+	&::before{
+		display: block;
+		content: " ";
+		padding-top: e(%("%s%%",(100/@ancho)*@alto));
+	}
+}
+
+// crea una flecha
+.dibuja-flecha(@color: white){
+	&::before{
+		content: " ";
+		display: inline-block;
+		vertical-align: middle;
+		width: 1rem;
+		height: 1px;
+		background-color: @color;
+	}
+
+	&::after{
+		content: " ";
+		display: inline-block;
+		vertical-align: middle;
+		border-top: 1px solid @color;
+		border-right: 1px solid @color;
+		margin-left: -0.5rem;
+		width: 0.5rem;
+		height: 0.5rem;
+		transform: rotate(45deg);
+	}
+}

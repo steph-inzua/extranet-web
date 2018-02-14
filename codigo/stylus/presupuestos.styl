@@ -1,0 +1,730 @@
+@require "base/utiles"
+@require "nib"
+
+
+select{
+	background: transparent;
+	-webkit-appearance:none;-moz-appearance:none;appearance:none; text-align: center;
+	
+}
+select::-ms-expand {
+    display: none;
+}
+
+#header
+	@media( max-width: 585px)
+		border-bottom 35px solid blanco
+.pagina
+	padding-top 90px
+#pedido-new
+	display none
+.presupuestos-contenido
+	padding 40px 0
+	position relative
+	@media( max-width: 585px)
+		padding-top 0
+	.button-add
+		position absolute
+		top 40px
+		right 0
+		@media( max-width: 585px)
+			position fixed
+			bottom 12px
+			right 12px
+			top auto
+			width 46px
+			padding 23px 0
+			z-index 9
+			line-height 4.2em
+			font-weight 600
+#header-filter
+	padding 8px 0
+	
+	@media( max-width: 585px)
+		height 20px
+		z-index 4
+	.contenedor
+		display flex
+		justify-content space-between
+		@media( max-width: 585px)
+			display block
+		.filter-all
+			width 48%
+			@media( max-width: 585px)
+				width 100%
+				position relative
+				margin-top 45px
+				//margin-right -2%
+				//margin-left -2%
+				z-index 1
+				//outline 1px solid black
+				
+				//box-sizing border-box
+				form
+					margin-top 20px
+					display block
+					position relative
+					//width 100%
+					margin-right -1%
+					margin-left -1%
+					@media( max-width: 585px)
+						margin-top 25px
+			
+			.sel
+				position relative
+				cursor pointer
+				float left
+				box-sizing border-box
+				margin 0 0 0 2%
+				
+				@media( max-width: 585px)
+					margin 0 1% 2% 1%
+					
+				
+				select 
+					appearance none
+					padding 0
+					margin 0
+					background transparent 
+					@media( max-width: 585px)
+						font-size (12 / 16)rem
+						font-weight 300
+				&:before
+					position absolute
+					content ''
+					width 12px
+					height 10px
+					background url('../img/icons/arrow-select.png') no-repeat
+					right 15px
+					top calc(50% - 0.35em)
+					@media( max-width: 585px)
+						background url('../img/icons/arrow-select2.png') no-repeat
+						right 9px
+					
+				.sel__placeholder
+					display block
+					pointer-events none
+					user-select none
+					visibility visible
+					&:before
+						position absolute
+						top 0
+						bottom 0
+						left 0
+						right auto
+						content attr(data-placeholder)
+						visibility hidden
+						padding 6px 20px
+						@media( max-width: 585px)
+							padding 6px 15px
+				&.select-anio
+					width 26%
+				&.select-mes
+					width 31%
+				&.select-cliente
+					width 37%
+				&.select-anio
+				&.select-mes	
+					@media( max-width: 585px)
+						width 48%
+				&.select-cliente
+					@media( max-width: 585px)
+						width 98%		
+			.sel.active
+				&:before
+					transform rotateX(-180deg)
+				.sel__placeholder
+					visibility hidden
+					&:before
+						visibility visible
+				.sel__box
+					display block
+					animation fadeInUp 500ms
+			.select-option
+				font-size (14 / 16)rem
+				background #f8f8f8
+				padding 6px 20px 6px 20px 
+				box-sizing border-box
+				appearance none
+				display inline-block
+				color plomo3
+				@media( max-width: 585px)
+					font-size (12 / 16)rem
+					background  #f8f7fd
+					font-weight 300
+					padding 8px 20px 8px 15px
+				
+.sel__box
+	position absolute
+	top calc(100% + 4px)
+	left 0
+	display none
+	list-style-type none
+	text-align left
+	font-size 1em
+	background-color #FFF
+	width 100%
+	box-sizing border-box
+	z-index 2
+.sel__box__options
+	display list-item
+	color plomo
+	padding 0.5em 16px
+	user-select none
+.sel__box__options::after
+	content '\f00c'
+	font-family 'FontAwesome'
+	font-size 0.8em
+	margin-left 5px
+	display none
+	color naranja1
+.sel__box__options.selected::after
+	display inline
+
+.sel__box__options:hover
+	background-color #ebedef
+
+.sel--black-panther {
+  z-index: 3;
+}
+
+
+.sel--superman {
+/*   display: none; */
+  z-index: 2;
+}
+
+/* ===== Keyframes ===== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}				
+			
+#status
+	
+	
+	li
+		display inline-block
+		margin-right 35px
+		@media (max-width: 585px)
+			margin-right 5px
+		button
+			color #721a64
+			font-size (15.3 / 16)rem
+			font-weight 500
+			text-shadow 0 0 0.1px alpha(#721a64, 30%)
+			transition all .4s
+			@media (max-width: 585px)
+				font-size (11 / 16)rem
+				margin-top 10px
+				margin-bottom 8px
+			&:hover
+				color lila2
+				.value
+					opacity .7
+			&.active
+				font-weight 600
+				position relative
+				&:after
+					content ''
+					display block
+					width 100%
+					position absolute
+					bottom 0
+					height 1px
+					background #721a64
+				
+		.item-status
+			position relative
+			padding 11px 25px 3px 0
+			@media (max-width: 585px)
+				padding 11px 15px 3px 0
+			&.item-status-all
+				 padding 11px 2px 3px 0
+
+		.number
+			position absolute
+			top -1px
+			right 1px
+			width 18px
+			text-align center
+			@media (max-width: 585px)
+				top -5px
+				right -2px
+				width 18px
+			.value
+				background lila2
+				border-radius 50%
+				padding 0
+				width 100%
+				box-sizing border-box
+				font-size (10 / 16)rem
+				display inline-block
+				color blanco
+				font-weight 600
+				text-align center
+				line-height 1.7em
+				height 18px
+				transition all .4s
+				@media (max-width: 585px)
+					font-size (8 / 16)rem
+					line-height 2.2em
+
+#result-filter
+	margin-top 45px
+	select
+		padding-left 10px
+		padding-right 10px
+		@media (max-width: 585px)
+			font-size (11 / 16)rem
+			text-align center
+			font-weight 400
+			color plomo2
+			
+	@media (max-width: 585px)
+		margin-top 10px
+	.camp
+		width 60px
+		background #eeeae9
+		padding 3px 6px
+		font-family "OpenSans"
+		color plomo
+		text-align center
+		@media (max-width: 585px)
+			color plomo2
+			font-size (11 / 16)rem
+			width 85px
+			padding 3px 6px
+	.camp:disabled
+		background transparent
+	.item-result-cliente
+		position relative
+		margin-bottom 10px
+		@media (max-width: 585px)
+			margin-bottom 0
+		::-webkit-scrollbar {
+		    width: 10px;
+		}
+		 
+		::-webkit-scrollbar-track {
+		    background-color: #f3f2f7;
+		    -webkit-border-radius: 10px;
+		    border-radius: 10px;
+		}
+
+		::-webkit-scrollbar-thumb {
+		    -webkit-border-radius: 10px;
+		    border-radius: 10px;
+		    background: #a7a7a7; 
+		}
+		header
+			background #f0eaea
+			display flex
+			padding 14px 20px
+			
+			@media (max-width: 768px)
+				display block
+			@media (max-width: 585px)
+				display none
+			.nom_cliente
+				margin-right 42px
+				@media (max-width: 768px)
+					margin-bottom 14px
+				 
+				.rz
+					color crema4
+					font-size 0.79rem
+					font-weight normal
+					margin-left 10px
+					padding-left 11px
+					padding-bottom 2px
+					border-left 1px solid @color
+					line-height 0.9em
+					display inline-block
+					position relative
+					top 0
+			.status_cliente
+				
+				color plomo3
+				
+				li
+					display inline-block
+					margin-right 20px
+					.item-status
+						position relative
+						padding 2px 21px 0 20px
+						color plomo3
+						font-size (13.5 / 16)rem
+						letter-spacing 0.02em
+						font-weight normal
+						transition all .4s
+						&:hover
+							color negro
+						@media (max-width: 768px)
+							padding 2px 21px 0 0
+						&.active
+							font-weight 700
+							&:after
+								content ''
+								display block
+								width calc(100% - 39px)
+								position absolute
+								bottom -2px
+								height 1px
+								background todo	
+								z-index 1
+								
+						.number
+							position absolute
+							top -6px
+							right 0
+							z-index 1
+							.value
+								font-size (10 / 16)rem
+								border-radius 50%
+								background transparent  !important
+								font-weight 700
+								width 16px
+								line-height 1.6em
+								height auto
+								display block
+								text-align center
+								letter-spacing normal
+								&.todo
+									border 1px solid todo
+									color todo
+								&.aprobado
+									border 1px solid aprobado
+									color aprobado
+								&.espera
+									border 1px solid espera
+									color espera	
+								&.rechazado
+									border 1px solid rechazado
+									color rechazado		
+		input[type= "checkbox"]
+			display none
+		.tab-expander
+			background url('../img/icons/arrow-select1.png') center no-repeat
+			width 60px
+			height 40px
+			display block
+			cursor pointer
+			position absolute
+			top 5px
+			right 0
+			transform rotate(179deg)
+			transition all .4s
+		input:checked + .tab-expander
+			transform rotate(0deg)
+				
+		input:checked ~ .result-marcas
+			max-height 0
+			visibility hidden
+			transition all .4s
+
+		.result-marcas
+			overflow-x scroll
+			max-height 1600px
+			visibility visible
+			transition all .4s
+			@media (max-width: 585px)
+				overflow-x visible
+				max-height 100%
+			.tabla
+				width 100%
+				margin-top 8px
+				padding-bottom 35px
+				@media (max-width: 485px)
+					padding-bottom 0
+					margin-top 0
+				.actionButtons
+					display none
+					.cancelButton
+						color plomo3
+						display inline-block
+						font-size (10 / 16)rem
+						background #CCC
+						color blanco
+						border-radius 50%
+						padding 4px 5px
+						font-weight bold
+						position relative
+						top -9px
+						margin-left 5px
+						display none
+						&:hover
+							background #be2a2a
+					.saveButton
+						display block
+						font-size (16 / 16)rem
+						top 3px
+						
+				
+				&.readOnly
+					.actionButtons
+						display block
+					.editButton
+						display none
+
+				.rz_social-th
+				.rz_social-td
+				.tab-cliente-resp
+					display none
+					
+					@media (max-width: 585px)
+						display block
+						
+				
+					
+				.tab-cliente-resp td
+					@media (max-width: 585px)
+						background transparent
+						text-align left
+						padding 0
+				.rz_social-td
+					@media (max-width: 585px)
+						padding 15px 9px
+						background transparent
+						text-align left
+					.rz
+						color crema1
+				.tab-cliente-resp
+					td
+						background #f0eaea !important
+					
+					.tab-control
+						display block
+						width 100%
+						text-align left
+						background url('../img/icons/arrow-select.png') right 10px center no-repeat
+						padding 10px
+						font-size (12 / 16)rem
+						color plomo3
+						@media (max-width: 585px)
+							padding 8px 10px
+							margin-bottom 10px
+
+					@media (max-width: 585px)
+						td
+							font-size (12 / 16)rem
+				
+
+				.editar-resp
+					display none		
+					@media (max-width: 585px)
+						display block
+				.editar-lapt
+					@media (max-width: 585px)
+						display none
+						width 20px
+						float right
+						
+				.editar-resp-move
+					display none
+					@media (max-width: 585px)
+						display block !important
+						background #f3f2f7 !important
+						padding-top 30px
+						margin-bottom 10px
+						.editar-lapt
+							display block !important
+					
+				.editar-lapt
+				.editar-resp
+					button
+						color gris3
+						font-size (17 / 16)rem
+						position relative
+						top 1px
+						transition all .4s
+						width 25px
+						display block
+						text-align center
+						&:hover
+							transform scale(1.25)
+							color crema2		
+						&.activo
+							color crema2
+							&:hover
+								transform scale(1)
+				
+				.ppto
+					max-width 130px
+					position relative
+					@media (max-width: 585px)
+						max-width 100%
+					a
+						font-weight 600
+						color #454545
+						text-align left
+						text-decoration underline
+						display block
+						line-height 1.1em
+						
+						@media (max-width: 585px)
+							text-align center
+							text-decoration none
+							color inherit
+							font-weight @color
+							padding-right 0
+						&:hover
+							color morado3
+				.aprobacion
+					border-left 15px solid gris1
+					padding-left 20px
+					
+					
+					@media (max-width: 585px)
+						border-left 0
+						width 100%
+						//padding 10px
+						padding 10px
+						padding-left 50%
+						text-align center
+				.aprobacion-select
+					max-width 40px
+					padding 17px 5px 17px 20px
+					
+					@media (max-width: 585px)
+						padding 10px
+						padding-left 50%
+						text-align center		
+						
+				.ejecutivo
+					width 100px
+				.presupuesto
+					padding-right 25px
+					width 165px
+				.estado
+					width 110px
+				.modificado
+					padding-top 20px
+					
+					@media (max-width: 585px)
+						padding-top 10px
+						margin-bottom 25px
+					
+				.pdf
+					position absolute
+					top 0
+					right 0
+					padding-top 12px
+					width 37px
+					@media (max-width: 585px)
+						top -106px
+						max-width 22px
+						padding-top 0
+				.oc
+					width 60px
+				th
+					color #721a64
+					font-size (13.5 / 16)rem
+					font-weight normal
+					text-align center
+					padding 19px 0
+				td
+					font-size (13.4 / 16)rem
+					color plomo2
+					padding 14px 15px
+					text-align center
+					vertical-align top
+					font-weight 300
+					@media (max-width: 585px)
+						font-size (11 / 16)rem
+						font-weight 400
+						padding 10px
+					&.padd5
+						padding 14px 5px
+						@media (max-width: 585px)
+							padding 10px
+							padding-left 50%
+							text-align center
+							
+				tbody
+					background #f8f7fd
+					@media (max-width: 585px)
+						background transparent
+					tr
+						&:nth-last-child(4n + 1)
+							background gris1
+							
+							@media (max-width: 585px)
+								background transparent
+						td
+							&:nth-child(2n)
+								@media (max-width: 585px)
+									background #f8f7fd
+										
+				@media (max-width: 585px)
+					thead
+					tbody
+					th
+					td
+					tr
+						display block
+					thead
+						tr
+							position absolute
+							top -9999999999px
+							left -99999999999999px
+					
+					td
+						//border-bottom 1px solid red
+						position relative
+						padding-left 50%
+						box-sizing border-box
+						white-space normal
+						text-align center
+						&:before
+							content attr(data-title)
+							absolute top 8px left 15px
+							width 45%
+							padding-right 10px
+							white-space nowrap
+							text-align left
+							color #914e88
+							
+	.op1
+		outline 1px solid red
+		display block
+	.tab-cliente-list-resp
+		@media (max-width: 485px)
+			display none !important
+		
+	.aparece-ya
+		display block !important
+
+			
+			
+	.lista-icons
+		.check
+			background url('../img/icons/check.png') no-repeat
+			padding-left 30px
+			display block
+			color morado8				
+	
+.ddcommon
+	@media (max-width: 485px)
+		max-width 95px
+.novisible
+	display none
+.visible_h
+	height auto !important

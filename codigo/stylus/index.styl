@@ -1,0 +1,228 @@
+@require "base/utiles"
+@require "nib"
+
+body
+	background morado1
+#nav-left
+#pedido-new
+#user	
+	display none
+.pagina
+	padding-top 0
+#main-right
+	margin-left 0
+		
+#logina
+	max-width 402px
+	margin 0 auto 0 auto
+	text-align center
+	height 100vh
+	display flex
+	justify-content center
+	flex-direction column
+	align-items center
+	padding 20px 50px
+	box-sizing border-box
+	
+	.user
+		@media( max-width: 425px)
+			max-width 150px
+	.sign
+		margin 55px 0 10px 0
+		width 100%
+		@media( max-width: 425px)
+			margin 20px 0 10px 0
+		.input
+			position relative
+			margin-bottom 15px
+			padding-bottom 8px
+			@media( max-width: 425px)
+				margin-bottom 12px
+			.campo
+				border none
+				display block
+				width 100%
+				padding 6px 0
+				
+				font-size (14 / 16)rem
+				color lila1
+				outline none
+				background transparent
+				text-align center
+				@media( max-width: 425px)
+					font-size (13 / 16)rem
+				&:focus + .bar:after
+					width 100%
+			::-webkit-input-placeholder 
+				color lila1
+
+			
+			input[type="password"]::-webkit-input-placeholder 
+				font-size (15 / 16)rem
+				font-family "OpenSans"
+				font-weight bold
+			input[type="password"].campo
+				font-size (14 / 16)rem
+				letter-spacing 2px
+			.bar
+				position absolute
+				left 0
+				bottom 0
+				background #6d5b6b
+				width 100%
+				height 1px
+				&:after
+					content ''
+					position absolute
+					left 0
+					bottom 0
+					background #aa3585
+					width 0
+					height 2px
+					left 50%
+					transform translateX(-50%)
+					transition width 0.4s
+			
+			#msg
+			#candado
+				position absolute
+				bottom 10px
+				//fill #af9dad
+			#msg
+				left -2px
+			#candado
+				left 2px
+	#submit
+		position relative
+		.enviar
+			border none
+			cursor pointer
+			transition all .4s
+			background morado2
+			color lila1
+			text-transform uppercase
+			font-size (15 / 16)rem
+			padding 15px 25px
+			width 100%
+			box-sizing border-box
+			margin-top 16px
+			@media( max-width: 425px)
+				font-size (14 / 16)rem
+			&:hover
+				background morado2
+		
+	.recordatorio
+		text-decoration none
+		color #7e6b7c
+		font-size (12.5 / 16)rem
+		margin-top 15px
+		display inline-block
+		position relative
+		font-weight 300
+		font-weight normal
+		margin-bottom 85px
+		@media (max-width: 425px)
+			font-size (11.5 / 16)rem
+		@media( max-height: 560px)
+			margin-bottom 10px
+ 
+.logo-atk
+	position absolute
+	bottom 25px
+	left 50%
+	transform translateX(-50%)
+	z-index 2
+	
+	a
+		display block
+	@media( max-height: 560px)
+		position static
+		bottom 0
+		width 71px
+		margin 0 auto
+		height 100%
+		left 0
+		transform translate(0,0)
+		padding-bottom 15px
+.key-path
+	fill none
+	stroke #fff
+	stroke-width 0.5
+	stroke-linecap round
+	stroke-linejoin round
+	stroke-miterlimit 10
+	stroke-dasharray 200
+	stroke-dashoffset 200
+	-webkit-animation dash 3s .3s linear forwards
+	animation dash 3s .3s linear forwards
+
+@-webkit-keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+.dots{ 
+	position: absolute;
+	top: 0
+	left: 50%;
+	width: 30%;
+	margin: 0 auto;
+	height: 100%;
+	font-size: 2rem;
+	line-height: 1rem;
+	padding: 0;
+	pointer-events: none;
+	transform: translate(-50%, -30%);
+	opacity: 1;
+}
+.dot{
+	position: absolute;
+	top: calc(50% + 1rem);
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 1rem;
+	background: white;
+	display: block;
+	animation: bounce 800ms infinite;
+}
+@keyframes bounce{
+  0%{ transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  15%{ transform: translateY(-50%);
+    animation-timing-function: ease-in;
+  }
+  30%{ transform: translateY(0);}
+  100%{ transform: translateY(0);}
+}
+       
+.dot:nth-child(1){
+  left: calc(30% - 0.5rem);
+  animation-delay: 200ms;
+}
+.dot:nth-child(2){
+  left: calc(50% - 0.5rem);
+  animation-delay: 400ms;
+}
+.dot:nth-child(3){
+  left: calc(70% - 0.5rem);
+  animation-delay: 600ms;
+ }
+ 
+
+input.submit.checking label{        
+	transform: translateY(30%);
+	opacity: 0;
+}
+input.submit.checking .dots{
+	transform: translateY(0%);
+	opacity: 1;
+}

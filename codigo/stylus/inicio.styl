@@ -1,0 +1,201 @@
+@require "base/utiles"
+@require "nib"
+
+
+#header
+	.contenedor
+		padding 0 82px 0 70px
+		@media( max-width: 425px )	
+			padding 0 20px 0 10px
+#user
+	z-index 2
+	.contenedor
+		padding 0 95px
+		@media( max-width: 425px )	
+			padding 0 20px
+		img
+			max-width 33px
+			@media( max-width: 425px )
+				max-width 27px
+#nav-left
+#pedido-new	
+	display none
+#main-right
+	margin-left 0
+.box-categ
+	display flex
+	flex-wrap wrap
+	justify-content space-between
+	padding 90px 30px 40px 30px
+	box-sizing border-box
+	max-width 1280px
+	margin 0 auto
+	@media( max-width: 425px )	
+		padding 11px 14px 40px 14px
+	.item-box-categ
+		width 25%
+		
+		margin-bottom 40px
+		//outline 1px solid red
+		padding 0 10px
+		box-sizing border-box
+		transition all .3s
+		@media( max-width: 768px )
+			width 50%
+		@media( max-width: 425px )	
+			width 100%
+			padding 0
+			margin-bottom 20px
+		
+		&:hover
+			transform scale(1.1)
+			@media( max-width: 425px )
+				transform scale(1)
+			
+			header
+				background linear-gradient(top, #ae66a2 0%, #944e89 100%)
+				@media( max-width: 425px )
+					padding 10px 10px 18px 10px
+				h2
+					color blanco
+			.serv-icon
+				span
+					background #f0eaea
+					color morado7
+					font-size (22 / 16)rem
+					line-height 1.7em
+					@media( max-width: 425px )
+						font-size inherit
+		a
+			display block
+			max-width 256px
+			background #f8f7fd
+			box-shadow 1px 1px 5px #e6e6e6
+			transition all .3s
+			margin 0 auto
+			@media( max-width: 425px )
+				width 100%
+				max-width 100%
+			
+		.header
+			background linear-gradient(top, #e6dae7 0%, #cebccf 100%)
+			padding 25px 10px 35px 10px
+			text-align center
+			box-sizing border-box
+			@media( max-width: 425px )
+				padding 10px 10px 18px 10px
+		.item-box-info
+			padding 0
+			box-sizing border-box
+			margin-top -10px
+			.item-box-tit
+				font-size (12 / 16)rem
+				color morado6
+				text-align center
+				margin-bottom 12px
+				@media( max-width: 425px )
+					margin-bottom 5px
+				
+			.item-box-detail
+				font-size (12.5 / 16 )rem
+				@media( max-width: 425px )
+					font-size (10.5 / 16 )rem
+					padding-bottom 17px
+				ul
+					width 100%
+					@media( max-width: 425px )
+						display flex
+						flex-wrap wrap
+				li
+					display flex
+					color gris2
+					font-weight 300
+					width 100%
+					justify-content space-between
+					padding 0 30px
+					box-sizing border-box
+					@media( max-width: 425px )
+						padding 0 14px
+						width 50%
+					
+					div
+						
+						
+						span
+							border-bottom 1px solid #cfc0cd
+							display block
+							padding 24px 0 9px 0
+							@media( max-width: 425px )
+								padding 14px 0 5px 0
+						&.label
+							width 80%
+							
+							
+							@media( max-width: 425px )
+								width 85%
+						&.number-cell
+							text-align right
+							color morado6
+							width 20%
+							font-size (12 / 16)rem
+							@media( max-width: 425px )
+								width 15%
+								font-size (10.5 / 16)rem
+						&.label
+						&.number-cell
+							span
+								overflow hidden
+								text-overflow ellipsis
+								white-space nowrap
+					&.icons
+						border-top 1px solid alpha(gris2, 10%)
+						margin-top 22px
+						width 100%
+						display block
+						padding 0
+						@media( max-width: 425px )
+							border 0
+							width auto
+							margin 0
+							padding 0 10px
+						.icons-list
+							padding 13px 30px
+							display block !important
+							width 100%
+							box-sizing border-box
+							@media( max-width: 425px )
+								padding 16px 0 7px 0
+							img
+								margin-right 6px
+								display inline
+								@media( max-width: 425px )
+									max-width 11px
+		.serv-icon
+			width 44px
+			margin 0 auto
+			position relative
+			top -22px
+			@media( max-width: 425px )
+				width 30px
+				top -15px
+				z-index 1
+			span
+				display block
+				border 2px solid blanco
+				border-radius 50%
+				background #bc95b6
+				color blanco
+				text-align center
+				line-height 2em
+				font-size (19.5 / 16)rem
+				font-weight 100
+				@media( max-width: 425px )
+					font-size (15 / 16)rem
+					line-height 1.7em
+				&.icon-matrices
+					&:before
+						left -2px
+						position relative
+				
+
+

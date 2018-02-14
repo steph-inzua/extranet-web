@@ -1,0 +1,60 @@
+
+/* line 5 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\animations.styl */
+
+/* line 1 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\stylus\lib\functions\index.styl */
+
+/* line 1 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\animations.styl */
+@-moz-keyframes girar {
+
+/* line 2 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\animations.styl */
+  0% {
+    transform: rotate(0deg);
+  }
+
+/* line 4 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\animations.styl */
+  100% {
+    transform: rotate(720deg);
+  }
+}
+
+/* line 1 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\animations.styl */
+@-webkit-keyframes girar {
+
+/* line 2 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\animations.styl */
+  0% {
+    transform: rotate(0deg);
+  }
+
+/* line 4 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\animations.styl */
+  100% {
+    transform: rotate(720deg);
+  }
+}
+
+/* line 1 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\animations.styl */
+@-o-keyframes girar {
+
+/* line 2 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\animations.styl */
+  0% {
+    transform: rotate(0deg);
+  }
+
+/* line 4 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\animations.styl */
+  100% {
+    transform: rotate(720deg);
+  }
+}
+
+/* line 1 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\animations.styl */
+@keyframes girar {
+
+/* line 2 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\animations.styl */
+  0% {
+    transform: rotate(0deg);
+  }
+
+/* line 4 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\animations.styl */
+  100% {
+    transform: rotate(720deg);
+  }
+}

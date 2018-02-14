@@ -1,0 +1,37 @@
+@import "base/normalize.less";
+@import "base/lesshat.less";
+@import "base/utiles.less";
+//@import "base/slick-theme.less";
+
+//*{ background-color: rgba(0,0,0,0.1); }
+
+// Fuentes
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700,300|Noto+Sans:400);
+
+html{
+	font-family: "Titillium Web", sans-serif;
+	min-height: 100vh;
+}
+
+body{
+	min-height: 100vh;
+	color: #333;
+}
+
+figure{
+	margin: 0;
+	line-height: 0;
+
+	img{
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+// Clases genericas
+.contenedor{
+	max-width: 1160px;
+	.centrar();
+	.encierra-margenes();
+}
+

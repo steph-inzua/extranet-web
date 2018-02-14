@@ -1,0 +1,142 @@
+@require "base/utiles"
+@require "nib"
+
+  
+#slider
+	min-height 520px
+	height 100vh
+	display flex
+	align-items center
+	justify-content center
+	background url('../img/next-3.png') no-repeat center center
+	+hasta( escritorio )
+		padding-top 70px
+		height auto
+		display block
+		background none
+	>div
+		padding 0 90px
+		+hasta( escritorio )
+			padding 0
+		
+	.titles
+		max-width 340px
+		
+		position relative
+		text-align center
+		+hasta( escritorio )
+			margin 30px auto
+			width 260px
+			padding-bottom 60px
+			
+			background url('../img/arrow-down.png') no-repeat center bottom
+		.reto
+			width 272px
+			margin 0 auto
+			position relative
+			&:before
+				content ''
+				absolute top 2px left -7px
+				background url('../img/star-1-title.png') no-repeat
+				width 64px
+				height 64px
+			&:after
+				content ''
+				absolute top 2px right -7px
+				background url('../img/star-2-title.png') no-repeat
+				width 64px
+				height 64px
+		.pasa-s
+			+hasta( escritorio )
+				width 200px
+		.descrip
+			font-size (15.6 / 16)rem
+			line-height 1.5em
+			letter-spacing -0.4px
+			+hasta( escritorio )
+				font-size (14.15 / 16)rem
+			span
+				font-weight bold
+			&:after
+				content ''
+				display block
+				background alpha(blanco, 15%)
+				width 150px
+				margin 8px auto
+				height 2px
+		.stickers
+			border-top 1px solid blanco
+			border-bottom 1px solid blanco
+			font-size (13.39 / 16)rem
+			padding 8px 0
+			position relative
+			letter-spacing -0.5px
+			margin 50px auto 31px auto
+			max-width 280px
+			+hasta( escritorio )
+				max-width 160px
+				margin-right auto
+				margin-left auto
+				padding 3px 0
+			&:before
+				content ''
+				display block
+				background url('../img/stickers.png') no-repeat
+				width 53px
+				height 53px
+				absolute top -15px left -50px
+			&:after
+				content ''
+				display block
+				background url('../img/stickers.png') top right no-repeat
+				width 53px
+				height 53px
+				absolute top -15px right -50px
+				
+			p
+				color amarillo1
+	.caratula
+		border 3px solid crema
+		border-radius 4px
+		margin-top 10px
+	.mensaje
+		text-align center
+		+hasta( escritorio )
+			padding 0 20px
+			margin-bottom 60px
+		
+		>img
+			display block
+			margin 0 auto
+			max-width 340px
+			+hasta( escritorio )
+				max-width 100%
+		.lema
+		 	margin 20px 0
+		 	font-size (18.44 / 16)rem
+		 	+hasta( escritorio )
+		 		font-size (14 / 16)rem
+		.compart
+			a
+				display inline-block
+				margin 0 8px
+				position relative
+				top 0
+				transition .3s all
+				+hasta( escritorio )
+					margin 0
+				&:hover
+					top -5px
+					
+			img
+				+hasta( escritorio )
+					max-width 130px
+					
+		 		
+	 
+
+
+
+
+
+ 

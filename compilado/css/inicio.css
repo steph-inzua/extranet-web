@@ -1,0 +1,595 @@
+
+/* line 297 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+
+/* line 1 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\stylus\lib\functions\index.styl */
+
+/* line 105 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\stylus\lib\functions\index.styl */
+
+/* line 1 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\base\utiles.styl */
+
+/* line 15 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\base\utiles.styl */
+
+/* line 198 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\index.styl */
+
+/* line 10 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\index.styl */
+
+/* line 1 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\border.styl */
+
+/* line 53 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\border.styl */
+
+/* line 1 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\border-radius.styl */
+
+/* line 28 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\border-radius.styl */
+
+/* line 1 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\clearfix.styl */
+
+/* line 4 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\clearfix.styl */
+
+/* line 487 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\color-image.styl */
+
+/* line 196 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\color-image.styl */
+
+/* line 1 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\flex.styl */
+
+/* line 90 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\flex.styl */
+
+/* line 198 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\gradients.styl */
+
+/* line 11 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\gradients.styl */
+
+/* line 1 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\config.styl */
+
+/* line 7 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\config.styl */
+
+/* line 487 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\iconic.styl */
+
+/* line 25 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\iconic.styl */
+
+/* line 1 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\image.styl */
+
+/* line 19 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\image.styl */
+
+/* line 198 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\normalize\index.styl */
+
+/* line 8 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\normalize\index.styl */
+
+/* line 487 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\normalize\base.styl */
+
+/* line 19 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\normalize\base.styl */
+
+/* line 487 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\normalize\html5.styl */
+
+/* line 6 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\normalize\html5.styl */
+
+/* line 487 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\normalize\links.styl */
+
+/* line 30 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\normalize\links.styl */
+
+/* line 487 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\normalize\text.styl */
+
+/* line 7 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\normalize\text.styl */
+
+/* line 487 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\normalize\embed.styl */
+
+/* line 17 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\normalize\embed.styl */
+
+/* line 487 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\normalize\groups.styl */
+
+/* line 69 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\normalize\groups.styl */
+
+/* line 487 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\normalize\forms.styl */
+
+/* line 7 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\normalize\forms.styl */
+
+/* line 487 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\normalize\tables.styl */
+
+/* line 20 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\normalize\tables.styl */
+
+/* line 1 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\overflow.styl */
+
+/* line 66 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\overflow.styl */
+
+/* line 487 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\positions.styl */
+
+/* line 78 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\positions.styl */
+
+/* line 487 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\reset.styl */
+
+/* line 5 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\reset.styl */
+
+/* line 198 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\text\index.styl */
+
+/* line 12 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\text\index.styl */
+
+/* line 1 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\text\aliases.styl */
+
+/* line 9 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\text\aliases.styl */
+
+/* line 1 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\text\ellipsis.styl */
+
+/* line 8 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\text\ellipsis.styl */
+
+/* line 1 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\text\hide-text.styl */
+
+/* line 9 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\text\hide-text.styl */
+
+/* line 1 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\text\replace-text.styl */
+
+/* line 2 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\text\replace-text.styl */
+
+/* line 487 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\text\shadow-stroke.styl */
+
+/* line 523 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\text\shadow-stroke.styl */
+
+/* line 487 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\vendor.styl */
+
+/* line 11 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\vendor.styl */
+
+/* line 1 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\config.styl */
+
+/* line 28 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\config.styl */
+
+/* line 1 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\node_modules\nib\lib\nib\size.styl */
+
+/* line 5 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+
+/* line 6 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+#header .contenedor {
+  padding: 0 82px 0 70px;
+}
+@media (max-width: 425px) {
+
+/* line 8 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+  #header .contenedor {
+    padding: 0 20px 0 10px;
+  }
+}
+
+/* line 10 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+#user {
+  z-index: 2;
+}
+
+/* line 12 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+#user .contenedor {
+  padding: 0 95px;
+}
+@media (max-width: 425px) {
+
+/* line 14 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+  #user .contenedor {
+    padding: 0 20px;
+  }
+}
+
+/* line 16 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+#user .contenedor img {
+  max-width: 33px;
+}
+@media (max-width: 425px) {
+
+/* line 18 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+  #user .contenedor img {
+    max-width: 27px;
+  }
+}
+
+/* line 20 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+#nav-left,
+#pedido-new {
+  display: none;
+}
+
+/* line 23 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+#main-right {
+  margin-left: 0;
+}
+
+/* line 25 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+.box-categ {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding: 90px 30px 40px 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+@media (max-width: 425px) {
+
+/* line 33 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+  .box-categ {
+    padding: 11px 14px 40px 14px;
+  }
+}
+
+/* line 35 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+.box-categ .item-box-categ {
+  width: 25%;
+  margin-bottom: 40px;
+  padding: 0 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+}
+@media (max-width: 768px) {
+
+/* line 43 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+  .box-categ .item-box-categ {
+    width: 50%;
+  }
+}
+@media (max-width: 425px) {
+
+/* line 45 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+  .box-categ .item-box-categ {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+}
+
+/* line 50 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+.box-categ .item-box-categ:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+@media (max-width: 425px) {
+
+/* line 52 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+  .box-categ .item-box-categ:hover {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+/* line 55 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+.box-categ .item-box-categ:hover header {
+  background: -webkit-linear-gradient(top, #ae66a2 0%, #944e89 100%);
+  background: -moz-linear-gradient(top, #ae66a2 0%, #944e89 100%);
+  background: -o-linear-gradient(top, #ae66a2 0%, #944e89 100%);
+  background: -ms-linear-gradient(top, #ae66a2 0%, #944e89 100%);
+  background: linear-gradient(to bottom, #ae66a2 0%, #944e89 100%);
+}
+@media (max-width: 425px) {
+
+/* line 57 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+  .box-categ .item-box-categ:hover header {
+    padding: 10px 10px 18px 10px;
+  }
+}
+
+/* line 59 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+.box-categ .item-box-categ:hover header h2 {
+  color: #fff;
+}
+
+/* line 61 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+
+/* line 62 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+.box-categ .item-box-categ:hover .serv-icon span {
+  background: #f0eaea;
+  color: #6c276a;
+  font-size: 1.375rem;
+  line-height: 1.7em;
+}
+@media (max-width: 425px) {
+
+/* line 67 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+  .box-categ .item-box-categ:hover .serv-icon span {
+    font-size: inherit;
+  }
+}
+
+/* line 69 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+.box-categ .item-box-categ a {
+  display: block;
+  max-width: 256px;
+  background: #f8f7fd;
+  -webkit-box-shadow: 1px 1px 5px #e6e6e6;
+  box-shadow: 1px 1px 5px #e6e6e6;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+  margin: 0 auto;
+}
+@media (max-width: 425px) {
+
+/* line 76 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+  .box-categ .item-box-categ a {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* line 80 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+.box-categ .item-box-categ .header {
+  background: -webkit-linear-gradient(top, #e6dae7 0%, #cebccf 100%);
+  background: -moz-linear-gradient(top, #e6dae7 0%, #cebccf 100%);
+  background: -o-linear-gradient(top, #e6dae7 0%, #cebccf 100%);
+  background: -ms-linear-gradient(top, #e6dae7 0%, #cebccf 100%);
+  background: linear-gradient(to bottom, #e6dae7 0%, #cebccf 100%);
+  padding: 25px 10px 35px 10px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media (max-width: 425px) {
+
+/* line 85 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+  .box-categ .item-box-categ .header {
+    padding: 10px 10px 18px 10px;
+  }
+}
+
+/* line 87 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+.box-categ .item-box-categ .item-box-info {
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-top: -10px;
+}
+
+/* line 91 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+.box-categ .item-box-categ .item-box-info .item-box-tit {
+  font-size: 0.75rem;
+  color: #a269a2;
+  text-align: center;
+  margin-bottom: 12px;
+}
+@media (max-width: 425px) {
+
+/* line 96 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+  .box-categ .item-box-categ .item-box-info .item-box-tit {
+    margin-bottom: 5px;
+  }
+}
+
+/* line 99 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+.box-categ .item-box-categ .item-box-info .item-box-detail {
+  font-size: 0.78125rem;
+}
+@media (max-width: 425px) {
+
+/* line 101 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+  .box-categ .item-box-categ .item-box-info .item-box-detail {
+    font-size: 0.65625rem;
+    padding-bottom: 17px;
+  }
+}
+
+/* line 104 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+.box-categ .item-box-categ .item-box-info .item-box-detail ul {
+  width: 100%;
+}
+@media (max-width: 425px) {
+
+/* line 106 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+  .box-categ .item-box-categ .item-box-info .item-box-detail ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    -o-box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
+/* line 109 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+.box-categ .item-box-categ .item-box-info .item-box-detail li {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  color: #a2a1a4;
+  font-weight: 300;
+  width: 100%;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding: 0 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media (max-width: 425px) {
+
+/* line 117 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+  .box-categ .item-box-categ .item-box-info .item-box-detail li {
+    padding: 0 14px;
+    width: 50%;
+  }
+}
+
+/* line 121 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+
+/* line 124 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+.box-categ .item-box-categ .item-box-info .item-box-detail li div span {
+  border-bottom: 1px solid #cfc0cd;
+  display: block;
+  padding: 24px 0 9px 0;
+}
+@media (max-width: 425px) {
+
+/* line 128 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+  .box-categ .item-box-categ .item-box-info .item-box-detail li div span {
+    padding: 14px 0 5px 0;
+  }
+}
+
+/* line 130 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+.box-categ .item-box-categ .item-box-info .item-box-detail li div.label {
+  width: 80%;
+}
+@media (max-width: 425px) {
+
+/* line 134 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+  .box-categ .item-box-categ .item-box-info .item-box-detail li div.label {
+    width: 85%;
+  }
+}
+
+/* line 136 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+.box-categ .item-box-categ .item-box-info .item-box-detail li div.number-cell {
+  text-align: right;
+  color: #a269a2;
+  width: 20%;
+  font-size: 0.75rem;
+}
+@media (max-width: 425px) {
+
+/* line 141 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+  .box-categ .item-box-categ .item-box-info .item-box-detail li div.number-cell {
+    width: 15%;
+    font-size: 0.65625rem;
+  }
+}
+
+/* line 144 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+
+/* line 146 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+.box-categ .item-box-categ .item-box-info .item-box-detail li div.label span,
+.box-categ .item-box-categ .item-box-info .item-box-detail li div.number-cell span {
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* line 150 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+.box-categ .item-box-categ .item-box-info .item-box-detail li.icons {
+  border-top: 1px solid rgba(162,161,164,0.1);
+  margin-top: 22px;
+  width: 100%;
+  display: block;
+  padding: 0;
+}
+@media (max-width: 425px) {
+
+/* line 156 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+  .box-categ .item-box-categ .item-box-info .item-box-detail li.icons {
+    border: 0;
+    width: auto;
+    margin: 0;
+    padding: 0 10px;
+  }
+}
+
+/* line 161 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+.box-categ .item-box-categ .item-box-info .item-box-detail li.icons .icons-list {
+  padding: 13px 30px;
+  display: block !important;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media (max-width: 425px) {
+
+/* line 166 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+  .box-categ .item-box-categ .item-box-info .item-box-detail li.icons .icons-list {
+    padding: 16px 0 7px 0;
+  }
+}
+
+/* line 168 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+.box-categ .item-box-categ .item-box-info .item-box-detail li.icons .icons-list img {
+  margin-right: 6px;
+  display: inline;
+}
+@media (max-width: 425px) {
+
+/* line 171 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+  .box-categ .item-box-categ .item-box-info .item-box-detail li.icons .icons-list img {
+    max-width: 11px;
+  }
+}
+
+/* line 173 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+.box-categ .item-box-categ .serv-icon {
+  width: 44px;
+  margin: 0 auto;
+  position: relative;
+  top: -22px;
+}
+@media (max-width: 425px) {
+
+/* line 178 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+  .box-categ .item-box-categ .serv-icon {
+    width: 30px;
+    top: -15px;
+    z-index: 1;
+  }
+}
+
+/* line 182 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+.box-categ .item-box-categ .serv-icon span {
+  display: block;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: #bc95b6;
+  color: #fff;
+  text-align: center;
+  line-height: 2em;
+  font-size: 1.21875rem;
+  font-weight: 100;
+}
+@media (max-width: 425px) {
+
+/* line 192 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+  .box-categ .item-box-categ .serv-icon span {
+    font-size: 0.9375rem;
+    line-height: 1.7em;
+  }
+}
+
+/* line 195 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+
+/* line 196 : D:\Website\Extranet atk\Extranet-atomikal-ultimo.git\codigo\stylus\inicio.styl */
+.box-categ .item-box-categ .serv-icon span.icon-matrices:before {
+  left: -2px;
+  position: relative;
+}

@@ -1,0 +1,274 @@
+{% extends "estructura-interior.twig" %}
+
+{% set seccion = "nuevo-presupuesto" %}
+{% set info = datos.portada %}
+
+{% block css %}
+	<link rel="stylesheet" href="css/{{ seccion }}.css" media="screen" title="estilo">
+{% endblock %}
+ 
+{% block cuerpo %}
+	<div class="contenedor">
+	   <section class="new-presu">
+
+	   
+	   		<header class="header-presu">
+	   			<h2><button class="button button-close" onclick="history.back();">X</button>Nuevo presupuesto</h2>
+	   		</header>
+
+	   		<article class="item-new">
+	   			<header class="item-new-tit">
+	   				1. Datos
+	   			</header>
+	   			<section class="item-new-form">
+	   				<div class="label-group">
+	   					<div class="label w-2-5">
+	   						<div class="selct1">
+	   							<select class="campo selct1">
+								<option>Categoria</option>
+								<option>1</option>
+	   							<option>2</option>
+	   							<option>3</option>
+	   							</select>
+	   						</div>
+	   					</div>
+
+	   					<div class="label w-2-5">
+	   						<div class="selct1">
+		   						<select class="campo">
+		   							<option>Marca</option>
+		   							<option>1</option>
+		   							<option>2</option>
+		   							<option>3</option>
+		   						</select>
+	   						</div>
+	   					</div>
+	   					<div class="label w-3 label-doble label-separar">
+	   						<label>Contacto</label>
+	   						<input type="text" name=""  class="campo" placeholder="Contacto" />
+	   					</div>
+	   				</div>
+
+	   				<div class="label-group">
+	   					
+						<div class="label  w-5 label-doble ">
+	   						<label>Proyecto</label>
+	   						<input type="text" name="" class="campo" placeholder="Proyectos" />
+	   					</div>
+
+
+	   					<div class="label w-2 label-doble label-separar">
+	   						<label>Fecha</label>
+	   						<input type="date" name="" id="date-new" class="campo">
+							<div class="calendar-active">
+								<span class="icon-calendario calendar"></span>
+							</div>
+	   					</div>
+
+	   					
+	   				</div>
+
+	   				<div class="label-group label-group-no">
+						<div class="label w-6">
+	   						<label>Lista de entregables</label>
+	   						<textarea class="campo" rows="5">
+	   							
+	   						</textarea>
+	   					</div>
+
+	   					<div class="label w-6">
+	   						<label>Estructura del proyecto</label>
+	   						<textarea class="campo" rows="5"></textarea>
+	   					</div>
+	   				</div>
+	   			</section>
+	   		</article>
+
+
+	   		<article class="item-new">
+	   			<header class="item-new-tit">
+	   				2. Descripción del pedido
+	   			</header>
+	   			<section class="item-new-form">
+	   				 <table class="tabla formSection padd-tabla">
+							<thead>
+								<tr>
+									<th>Item</th>
+									<th>Tiempo estimado</th>
+									<th>Hosting</th>
+									<th class="w-hosting">Monto por mes<br>del Hosting</th>
+									<th>Inversión total</th>
+									<th class="arrow-select"><img src="img/icons/arrow-select1_a.png" /></th>
+
+									<th class="add"><button class="button button-add open-modal1"> </button></th>
+								</tr>
+							</thead>
+							<tbody>
+								
+								<tr class="alert-tr">
+									<td class="pedido-tit" data-title="Item"><a href="#">Portal web 1</a></td>
+									<td data-title="Tiempo estimado">60 días</td>
+									<td data-title="Hosting">2 meses</td>
+								
+									<td data-title="Monto por mes del Hosting">$12 000</td>
+									<td data-title="Inversión total">$ 45 746</td>
+									<td><div  class="alert1"><img src="img/icons/alerta-2.png" /></div></td>
+									<td> </td>
+
+								</tr>
+
+								<tr>
+									<td class="pedido-tit" data-title="Item"><a href="#">Portal web</a></td>
+									<td data-title="Tiempo estimado">60 días</td>
+									<td data-title="Hosting">2 meses</td>
+								
+									<td data-title="Monto por mes del Hosting">$12 000</td>
+									<td data-title="Inversión total">$ 45 746</td>
+									<td> </td>
+									<td> </td>
+
+								</tr>
+
+
+								<tr>
+									<td class="pedido-tit" data-title="Item"><a href="#">Portal web</a></td>
+									<td data-title="Tiempo estimado">60 días</td>
+									<td data-title="Hosting">2 meses</td>
+								
+									<td data-title="Monto por mes del Hosting">$12 000</td>
+									<td data-title="Inversión total">$ 45 746</td>
+									<td> </td>
+									<td> </td>
+
+								</tr>
+
+								<tr>
+									<td class="pedido-tit" data-title="Item"><a href="#">Portal web</a></td>
+									<td data-title="Tiempo estimado">60 días</td>
+									<td data-title="Hosting">2 meses</td>
+								
+									<td data-title="Monto por mes del Hosting">$12 000</td>
+									<td data-title="Inversión total">$ 45 746</td>
+									<td> </td>
+									<td> </td>
+
+								</tr>
+
+
+								 
+
+
+								
+							</tbody>
+						</table>
+	   				
+	   			</section>
+	   			
+	   		</article>
+
+
+
+	   		<article class="item-new">
+	   			<header class="item-new-tit">
+	   				3. Términos y condiciones
+
+	   			</header>
+	   			<section class="item-new-form">
+
+	   				<div class="add-item">
+						<label>Nuevo item</label>
+						<input type="text" name="" class="campo">
+						<input type="submit" name="" class="add-item-button" value="Agregar" />
+	   				</div>
+	   				<div class="scroll-table">
+	   				 <table class="tabla tabla2">
+						
+							<tbody>
+								
+								<tr>
+									<td>Los precio es están en Nuevos Soles</td>
+									<td class="delete"><button class="borrar">X</button></td>
+
+								</tr>
+
+								<tr>
+									<td>Los precioes incluyen IGV</td>
+									<td class="delete"><button class="borrar">X</button></td>
+
+								</tr>
+
+								<tr>
+									<td>ATOMIKAL no procederás hasta contar con una orden de compra formal que haga referencia a este presupuesto y firma del mismo</td>
+									<td class="delete"><button class="borrar">X</button></td>
+								</tr>
+								<tr>
+									<td>La firma de la presente propuesta señala la conformidad del cliente firmante con los alcances, procedimientos, términos y condiciones
+que aquí se describen.</td>
+									<td class="delete"><button class="borrar">X</button></td>
+
+								</tr>
+
+								<tr>
+									<td>ATOMIKAL no procederás hasta contar con una orden de compra formal que haga referencia a este presupuesto y firma del mismo</td>
+									<td class="delete"><button class="borrar">X</button></td>
+								</tr>
+								<tr>
+									<td>La firma de la presente propuesta señala la conformidad del cliente firmante con los alcances, procedimientos, términos y condiciones
+que aquí se describen.</td>
+									<td class="delete"><button class="borrar">X</button></td>
+
+								</tr>
+
+								<tr>
+									<td>La firma de la presente propuesta señala la conformidad del cliente firmante con los alcances, procedimientos, términos y condiciones
+que aquí se describen.</td>
+									<td class="delete"><button class="borrar">X</button></td>
+
+								</tr>
+
+								<tr>
+									<td>ATOMIKAL no procederás hasta contar con una orden de compra formal que haga referencia a este presupuesto y firma del mismo</td>
+									<td class="delete"><button class="borrar">X</button></td>
+								</tr>
+								<tr>
+									<td>La firma de la presente propuesta señala la conformidad del cliente firmante con los alcances, procedimientos, términos y condiciones
+que aquí se describen.</td>
+									<td class="delete"><button class="borrar">X</button></td>
+
+								</tr>
+
+								<tr>
+									<td>ATOMIKAL no procederás hasta contar con una orden de compra formal que haga referencia a este presupuesto y firma del mismo</td>
+									<td class="delete"><button class="borrar">X</button></td>
+								</tr>
+								<tr>
+									<td>La firma de la presente propuesta señala la conformidad del cliente firmante con los alcances, procedimientos, términos y condiciones
+que aquí se describen.</td>
+									<td class="delete"><button class="borrar">X</button></td>
+
+								</tr>
+
+							</tbody>
+						</table>
+	   				</div>
+	   			</section>
+	   			
+	   		</article>
+
+	   		<input type="submit" value="Guardar" class="button button-orange1 button-large" />
+
+	   	
+	   	
+	   </section>
+   </div>
+
+
+{% endblock %}
+
+
+{% block js %}
+		
+{#	<script src="js/{{ seccion }}.js" defer></script> #}
+<script src="js/jquery.dd.min.js"></script>
+
+{% endblock %}

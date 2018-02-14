@@ -1,0 +1,260 @@
+@require "base/utiles"
+@require "nib"
+
+.opc
+	margin-top 40px
+	
+	+hasta( escritorio )
+		margin-top 10px
+		max-width 500px
+#slider
+	min-height 670px
+	height 100vh
+	display flex
+	align-items center
+	justify-content center
+	+hasta( escritorio )
+		display block
+	.cnt
+		display flex
+		padding 16px 19px
+		box-sizing border-box
+		+hasta( escritorio )
+			display block
+			padding 10px 12px
+		.conoce
+			width 35%
+			text-align center
+			background rgba(0,0,0,.8)
+			box-sizing border-box
+			padding 20px 0
+			+hasta( escritorio )
+				
+				margin 0 auto
+				width 100%
+				border-right none
+				border-bottom 6px solid crema
+			p
+				margin 20px 0
+				padding 0 15px
+				&.sumilla
+					display none
+					+hasta( escritorio )
+						display block
+			.caratula
+				border 3px solid crema
+				border-radius 4px
+				margin-top 20px
+				max-width 240px
+		.titles
+			width 290px
+			margin 0 auto
+			position relative
+			text-align center
+			.reto
+				width 205px
+				margin 0 auto
+				position relative
+				
+				&:before
+					content ''
+					absolute top 2px left -7px
+					background url('../img/star-1-title.png') no-repeat
+					background-size cover
+					width 50px
+					height 50px
+				&:after
+					content ''
+					absolute top 2px right -7px
+					background url('../img/star-2-title.png') no-repeat
+					background-size cover
+					width 50px
+					height 50px
+		 
+
+		 
+		.registro
+			
+			margin 0
+			width 65%
+			box-sizing border-box
+			padding 28px 25px
+			&.bg1
+				background url('../img/bg-reto-1.jpg')  repeat-x
+				+hasta( escritorio )
+					background url('../img/bg-reto-1-resp.jpg') #cb4836 repeat-x
+				
+			&.bg2
+				background url('../img/bg-reto-2.png') repeat-x #c4c3c3
+				@media (max-width: 425px)
+					background url('../img/bg-reto-2-resp.jpg') #c4c3c3 repeat-x
+ 
+				
+			+hasta( escritorio )
+				padding 40px 8px
+				width 100%
+			p
+				text-align center
+				font-size (15.3 / 16)rem
+				margin-bottom 15px
+				&.sumilla
+					padding 0 
+					
+					+hasta( escritorio )
+						display none
+				
+				
+				
+				+hasta( escritorio )
+					padding-left 0
+
+			.table-form
+				display flex
+				justify-content center
+				box-sizing border-box
+				max-width 594px
+				margin 0 auto
+				align-items  center
+				+hasta( escritorio )
+					padding 0 5px
+					display block
+					width 98%
+				
+				.label
+					text-align center
+					margin 0 10px
+					width 100%
+					+hasta( escritorio )
+						width 100%
+						margin 0 auto
+					
+				.txt
+					box-sizing border-box
+					width 100%
+					border-radius 3px
+					padding 8px 12px 8px 40px
+					position relative
+				.select-p
+					
+					width 100%
+					border-radius 3px
+					padding 8px 12px 8px 40px
+					position relative
+				.campo
+					position relative
+					margin 10px 0
+					+hasta( escritorio )
+						margin 10px 0
+					
+					.t-input
+						absolute top 2px left 0
+						content ''
+						width 35px
+						height 32px
+						display block
+						background rojo1
+						z-index 1
+						border-radius 3px 0 0 3px
+						&.nombre
+							background url('../img/icons-form.png') -3px 4px rojo1 no-repeat
+						&.apellido
+							background url('../img/icons-form.png') -3px -23px rojo1 no-repeat
+						&.telefono
+							background url('../img/icons-form.png') -6px -52px rojo1 no-repeat
+						&.destino
+							background url('../img/icons-form.png') -6px -115px rojo1 no-repeat
+						&.dni
+							background url('../img/icons-form.png') -6px -142px rojo1 no-repeat
+						&.direcc
+							background url('../img/icons-form.png') -6px -172px rojo1 no-repeat
+						&.url
+							background url('../img/icons-form.png') -6px -82px rojo1 no-repeat
+					
+				.select-f
+					width 97%
+					margin 0
+					+hasta( escritorio )
+						margin 0 auto
+						width 100%
+	 
+
+				.camp
+					border none
+					background blanco 
+					margin 2px 5px 
+					font-style italic
+					font-size (15.12 / 16)rem
+					font-weight bold
+					outline none
+					height 32px
+						
+					 
+				.acepto
+					
+					font-size (13 / 16)rem
+					letter-spacing 0.05em
+					margin-right 25px
+					+hasta( escritorio )
+						text-align center
+						display block
+						max-width 222px
+						margin 0 auto
+					a
+						text-decoration underline
+						color blanco
+				
+				#acepto
+					display none
+				.check-acepto
+					cursor pointer
+					position relative
+					display block
+					&:before
+						content ''
+						display inline-block
+						background url('../img/check-circle-condiciones.png') no-repeat
+						width 19px
+						height 20px
+						position relative
+						top 4px
+					&:after
+						content ''
+						display block
+						width 19px
+						height 20px
+						position absolute
+						top 4px
+						left 0
+				input:checked + .check-acepto:after
+					content ''
+					background url('../img/check-aspa-condiciones.png') no-repeat
+				 
+					
+			.busca
+				text-align center
+				font-size (12 / 16)rem
+				//padding-left 100px
+				margin 15px 0 20px 0
+				+hasta( escritorio )
+					padding 0 
+					margin 30px 0 10px 0
+				a
+					display inline-block
+					margin 0 8px
+				
+					&:hover
+						img
+							opacity .5
+				img
+					vertical-align middle
+					opacity 1
+					transition all .4s
+					+hasta( escritorio )
+						width 40px
+				span
+					+hasta( escritorio )
+						display block
+						margin-bottom 18px
+				
+	 
+			

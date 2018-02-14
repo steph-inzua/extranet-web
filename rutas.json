@@ -1,0 +1,19 @@
+{
+	"origen":{
+		"twig": "./codigo/twig/",
+		"pug": "./codigo/pug/",
+		"stylus": "./codigo/stylus/",
+		"less": "./codigo/less/",
+		"ecmascript": "./codigo/ecma/",
+		"imagenes": "./recursos/imagenes/",
+		"fuentes": "./recursos/fuentes/"
+	},
+	"destino":{
+		"html": "./compilado/",
+		"css": "./compilado/css/",
+		"js": "./compilado/js/",
+		"img": "./compilado/img/",
+		"fuentes": "./compilado/fonts/"
+	},
+	"ftp": "/httpdocs/"
+}

@@ -1,0 +1,1071 @@
+@require "base/utiles"
+@require "nib"
+
+global-reset()
+reset-html5()
+
+html *
+	//background-color rgba( 0, 0, 0, 0.1 )
+	//outline 1px solid rgba( 255, 255, 0, 0.1 )
+
+	&:hover
+		//outline 1px solid rgba( 255, 0, 255, 0.5 )
+
+fuente( "OpenSans", "OpenSans-Light", 300, normal )
+fuente( "OpenSans", "OpenSansLight-Italic", 300, italic )
+fuente( "OpenSans", "OpenSans", normal )
+fuente( "OpenSans", "OpenSans-Italic", normal, italic )
+fuente( "OpenSans", "OpenSans-Semibold", 600, normal )
+fuente( "OpenSans", "OpenSans-SemiboldItalic", 600, italic )
+fuente( "OpenSans", "OpenSans-BoldItalic", bold, italic )
+fuente( "OpenSans", "OpenSans-Bold", bold, normal )
+fuente( "OpenSans", "OpenSans-ExtraboldItalic", 800, italic )
+fuente( "OpenSans", "OpenSans-Extrabold", 800, normal )
+fuente( "iconos", "icomoon", normal )
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+::-webkit-scrollbar-track {
+    background-color: #ebebeb;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #a7a7a7; 
+}
+
+
+
+
+option
+	outline none
+select{
+	
+	background: transparent;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	appearance:none;
+	text-align: center;
+	
+}
+.selct1{
+	position: relative;
+	background #f7f7fc
+}
+.selct1:after{
+	content: '';
+	display: block;
+	background: url('../img/icons/arrow-select3.png') no-repeat center ;
+	width: 11px;
+	height: 9px;
+	position: absolute;
+	top: 16px;
+	right: 13px;
+	z-index: 0;
+}
+@media( max-width: 585px){
+	.selct1:after{
+		background: url('../img/icons/arrow-select3.png') no-repeat center ;
+		background-size: cover;
+		width: 10px;
+		height: 9px;
+		top: 9px;
+		right: 8px;
+	}	
+}
+
+.selct1 select{ position: relative; z-index: 1}
+.selct1 .campo{ background: transparent}
+
+body
+	margin 0
+	padding 0
+	//font-family "OpenSans"
+	font-family 'Open Sans', sans-serif
+	font-weight normal
+	color plomo
+	overflow-x hidden
+	background gris1
+	display flex
+	min-height 100vh
+	&.noscroll
+		@media( max-width: 425px )
+			overflow-y hidden
+	&.noscroll-desktop
+		overflow-y hidden
+img
+	max-width 100%
+
+.contenedor
+	padding 0 173px 0 173px 
+	margin 0 auto
+	display block
+	box-sizing border-box
+	transition padding .4s
+	@media( max-width: 1024px )
+		padding 0 25px
+	@media( max-width: 425px )
+		padding 0 20px
+	&.cont-nav
+		padding 0 105px 0 40px
+		
+		@media( max-width: 425px )
+			padding 0 20px
+
+.cl
+	clear both
+	display block
+	
+input
+textarea
+button
+select
+	font-family 'Open Sans', sans-serif
+	outline none
+	border 0
+	padding 0
+button
+	cursor pointer
+	background transparent
+a
+	text-decoration none
+	
+select
+	min-width 40px
+	cursor pointer
+		
+::-webkit-input-placeholder {
+    color:    #94b3c1;
+}
+:-moz-placeholder { 
+   color:    #94b3c1;
+   opacity:  1;
+}
+::-moz-placeholder {
+   color:    #94b3c1;
+   opacity:  1;
+}
+:-ms-input-placeholder { 
+   color:    #94b3c1;
+}
+::-ms-input-placeholder { 
+   color:    #94b3c1;
+}
+
+//efecto
+.shake{
+	
+	color: transparent;
+	animation: shake 125ms infinite;
+	transform: translateX(-0.1rem);
+}
+
+// h-group
+h2
+	font-size (19 / 16)rem
+	color lila4
+	font-weight bold
+	@media( max-width: 425px )	
+		font-size (13 / 16)rem
+
+h3
+	color morado8
+	font-size (19 / 16)rem
+	font-weight 700
+	line-height normal
+	letter-spacing 0.4px
+	@media( max-width: 425px)
+		font-size (15 / 16)rem
+	.date
+		color morado3
+		
+	.line
+		padding 0 5px
+	
+h4
+	font-size (19 / 16)rem
+	color plomo3
+	font-weight 600
+
+
+@keyframes shake{
+	0%{ 
+	    transform: translateX(0);
+	    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+	  }
+	30%{ 
+	    transform: translateX(-0.6rem);
+	    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+	  }
+	40%{ 
+	    transform: translateX(0.6rem);
+	    animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
+	  }
+ 
+	100%{ 
+	    transform: translateX(0);
+	} 
+}
+
+textarea
+	resize none
+.icon-clientes:before
+	content "\e901"
+	font-family "iconos"
+
+.icon-dolar:before
+	content "\e902"
+	font-family "iconos"
+
+.icon-matrices:before
+	content "\e905"
+	font-family "iconos"
+
+.icon-reloj:before
+	content "\e906"
+	font-family "iconos"
+
+.icon-editar:before
+	content "\e903"
+	font-family "iconos"
+	
+.icon-guardar:before
+	content "\e904"
+	font-family "iconos"
+
+.icon-calendario:before
+	content "\e907"
+	font-family "iconos"
+	
+.no-scroll
+	overflow hidden
+	
+.pagina
+	padding-top 95px
+	
+// menu-general
+#nav-left
+	background plomo4
+	width 14.2%
+	//max-width 188.86px
+	position relative
+	left -15%
+	transition all .2s
+	z-index 9
+	@media( max-width: 425px )
+		position absolute
+		width 100%
+		left -100%
+		top 45px
+		z-index 11
+		height calc(100vh - 45px)
+	&.open
+		left 0
+	.nav-left-cnt
+		position fixed
+		width 14.2%
+		@media( max-width: 425px )
+			width 100%
+			
+	.user
+		background url('../img/line-user-bg.jpg') no-repeat bottom
+		height 54px
+		padding 10px 30px
+		@media( max-width: 425px )
+			background url('../img/line-user-bg-resp.jpg') no-repeat bottom
+			padding 19px 22px
+		
+		.user-img
+		.user-dates
+			float left
+		.user-img
+			img
+				vertical-align middle
+				display block
+				width 36px
+		.user-dates
+			padding 3px 0 0 12px
+			color blanco 
+			p
+				font-size (13 / 16)rem
+				margin-top 3px
+				letter-spacing 0.3px
+				line-height 0.7em
+				@media( max-width: 425px )
+					font-size (14 / 16)rem
+					line-height 0.8em
+			.close-session
+				color gris2
+				opacity .8
+		&:before
+			content ''
+			position absolute
+			top 23px
+			right 0
+			display block
+			width 0
+			height 0
+			border-right 6px solid morado3
+			border-top 4px solid transparent
+			border-bottom 5px solid transparent
+			z-index 9
+			@media( max-width: 425px )
+				top 0	
+				right auto
+				left 25px
+				border-left 7px solid transparent
+				border-top 7px solid morado3
+				border-right 7px solid transparent
+	.nav-user
+		padding 15px 0
+		@media( max-width: 425px )
+			padding 4px 0
+		ul
+			a
+				color blanco
+				font-size (12.6 / 16)rem
+				
+				padding 6px 30px 14px 30px
+				display block
+				font-weight 300
+				letter-spacing 0.2px
+				position relative
+				
+				&:hover
+					span.tit
+						filter: grayscale(0)
+			li
+				label.subnav-item
+					&:after
+						content ''
+						display block
+						background url('../img/icons/arrow-ul-white.png') no-repeat
+						width 9px
+						height 8px
+						position absolute
+						top 17px
+						right 30px
+						transition all .4s
+						@media( max-width: 425px )
+							right 47px
+			span.tit
+				padding 9px 0 0 27px
+				background url('../img/icons/ico-menu.png') 0 3px no-repeat
+				display block
+				filter: grayscale(100%)
+				@media( max-width: 425px )
+					padding 9px 0 0 37px
+		ul
+			li
+				position relative
+				ul
+					visibility hidden
+					opacity 0
+					max-height 0
+					transition all .5s
+				input
+					position absolute
+					top 0
+					left 0
+					width 100%
+					height 100%
+					opacity 0
+					z-index 1
+					display block
+					cursor pointer
+					
+				input:checked + label + ul
+					z-index 2
+					position relative
+					visibility visible
+					opacity 1
+					max-height 200px
+					margin-bottom 10px
+				input:checked + label.subnav-item 
+					&:after
+						transform rotate(-180deg)
+			ul
+				
+				li
+					margin-bottom 2px
+					a
+						padding 15px 58px
+						background #292929
+						transition all .3s
+						@media( max-width: 425px )
+							padding 15px 68px
+						&:hover
+							background morado3
+	.other-nav
+		margin-top 40px
+		padding 0 35px 0 30px
+		a
+			color blanco
+	.icons-bottom
+		
+		width 100%
+		margin-top 220px
+		z-index 9
+		padding 10px 10px 20px 10px
+		box-sizing border-box 
+		@media( max-width: 425px )
+			margin-top 100px
+		ul
+			text-align center
+			li
+				display inline-block
+				margin 0 10px
+				a
+					filter: grayscale(100%)
+					
+#main-right
+	width 100%
+	margin-left -14.2%
+	transition all .3s
+	position relative
+	@media( max-width: 425px )
+		margin-left 0
+	&.two-columns
+		width 85.8%
+		margin-left 0
+		@media( max-width: 425px )
+			width 100%
+		
+
+// header
+#header
+	background morado3
+	color blanco
+	z-index 5
+	//position relative
+	position fixed
+	width 100%
+	transition all .4s
+	&.w-85
+		width 85.8%
+		@media( max-width: 425px )
+			width 100%
+	.contenedor
+		display flex
+		justify-content space-between
+		align-items center
+	.nav-notifications
+		display flex
+		.nav-noti-list
+			height 100%
+			padding 0 5px
+			
+			li
+				display inline-block
+				height 100%
+				position relative
+				margin-right 5px
+				@media( max-width: 425px )
+					position static
+					margin-right 0
+					.noti-categoria
+						font-size 0
+						&:before
+							content ''
+							display block
+							width 30px
+							height 25px
+							margin-top 5px
+				&:hover
+					.subnoti
+						visibility visible
+						opacity 1
+						top 54px
+						@media( max-width: 425px )
+							top 45px
+				>a
+					display block
+					color blanco
+					font-size (13.5 / 16)rem
+					height 100%
+					padding 10px 13px 17px 23px
+					box-sizing border-box
+					letter-spacing 0.6px
+					font-weight 100
+					transition all .4s
+					@media (max-width: 768px)
+						padding 8px 4px 16px 4px
+					@media (max-width: 425px)
+						padding 8px 7px 6px 5px
+					
+					.noti-categoria
+						padding 17px 25px 0 0
+						position relative
+						@media (max-width: 425px)
+							padding 0
+						.number
+							position absolute
+							top 3px
+							right 1px
+							width 18px
+							text-align center
+							@media (max-width: 425px)
+								width 14px
+								top -5px
+								right -2px
+							.value
+								background lila2
+								border-radius 50%
+								padding 0
+								width 100%
+								box-sizing border-box
+								font-size (10 / 16)rem
+								display inline-block
+								color blanco
+								font-weight 500
+								letter-spacing -0.2px
+								text-align center
+								line-height 1.8em
+								@media (max-width: 425px)
+									font-size (7.83 / 16)rem
+					&:hover
+						background morado4
+
+				&.noti-active
+					.value
+						background morado5 !important
+						color morado3 !important
+						font-weight 700 !important
+					&:hover
+						background morado4
+						.value
+							color morado4 !important	
+				.subnoti
+					//background #313030
+					background #434342
+					color blanco
+					absolute top 64px
+					width 300px
+					font-size (13 / 16)rem
+					visibility hidden
+					opacity 0
+					z-index 9
+					//transition visibility 0, opacity  .5s linear
+					transition all .3s
+					@media (max-width: 425px)
+						width 100%
+						absolute top 44px left 0
+						//height auto
+						background #f2f2f6
+						height calc(100vh - 35px)
+						overflow scroll !important
+					article
+						position relative
+						&:first-child
+							>a
+								padding-top 22px
+							.close-subnoti
+								top 9px
+						&:last-child
+							.subnoti-item
+								border-bottom 0
+							
+						>a
+							display block
+							padding 12px 20px 0 20px
+							box-sizing border-box
+							color blanco
+							@media (max-width: 425px)
+								color plomo2
+								font-size (12 / 16)rem
+								padding 12px 30px 0 30px
+								
+							&:hover
+								background #393838
+								@media (max-width: 425px)
+									background none
+							&.no-visit
+								background #313030
+								@media (max-width: 425px)
+									background #e9e5ea
+								
+						.subnoti-item
+							border-bottom 1px solid alpha(blanco, 15%)
+							padding-bottom 12px
+							padding-right 20px
+							@media (max-width: 425px)
+								border-bottom 1px solid alpha(morado1, 20%)
+							
+							.subnoti-detail
+								font-size (11 / 16)rem
+								color #9f9f9f
+								margin-top 3px
+								.logo
+									color #ac8195
+									display inline-block
+									cursor pointer
+									&:hover
+										text-decoration underline
+						.close-subnoti
+							position absolute
+							position absolute
+							right 0
+							top 0
+							padding 12px 20px
+							@media (max-width: 425px)
+								padding 10px 30px
+							
+							.close
+								background #957282
+								color blanco
+								display block
+								padding 2px 4px
+								line-height 1
+								font-size (10 / 16)rem
+								transition all .4s
+								@media (max-width: 425px)
+									padding 3px 5px
+								
+								&:hover
+									background #815067
+				
+					
+								
+				&.noti-1
+					.noti-categoria
+						&:before
+							background url('../img/icons/msg.png') no-repeat
+				&.noti-2
+					.noti-categoria
+						&:before
+							background url('../img/icons/campana.png') no-repeat
+
+
+
+	.logo
+		padding 5px 0
+		a
+			display block
+		@media( max-width: 425px)
+			max-width 50px
+	.buscador
+		flex 0 1 20%
+		position relative
+		top -1px
+		@media( max-width: 425px)
+			position absolute
+			top 45px
+			width 100%
+			left 0
+			background transparent
+			
+	.search
+		background blanco
+		padding 1px 15px
+		border-radius 16px	
+		@media( max-width: 425px)
+			width 100%
+			background transparent
+			margin-left -30px
+			margin-right -30px
+			
+		.submit
+			background url('../img/icons/search.png') no-repeat center center /contain
+			font-size 0
+			width 14px
+			height 28px
+			cursor pointer
+			display inline
+			vertical-align top
+			@media( max-width: 425px)
+				float right
+				width 18px
+				margin-right 5px
+				z-index 2
+				position relative
+				
+		.text
+			line-height 1.5em
+			display inline
+			height 28px
+			font-size (13 / 16)rem
+			font-weight 100
+			padding-left 4px
+			letter-spacing 0.2px 
+			@media( max-width: 425px)
+				display none
+				width 100%
+	.control-menu
+		margin-right 32px
+		&.control-marg
+			margin-right 33px
+		@media( max-width: 425px)
+			margin-right 13px
+		span
+			display block
+			width 20px
+			height 3px
+			background blanco
+			border-radius 6px
+			position relative
+			@media( max-width: 425px)
+				height 2px
+				opacity .3
+			&:after
+			&:before
+				content ''
+				display block
+				position absolute
+				width 20px
+				height 3px
+				background blanco
+				border-radius 6px
+				position absolute
+				@media( max-width: 425px)
+					height 2px
+			&:after
+				bottom -6px
+			&:before
+				top -6px
+		span
+		span:before
+		span:after
+			transition all 500ms cubic-bezier(0.615, 0.25, 0.505, 1.47)
+		&.active
+			span
+				//transform rotate(180deg) scale(1.2)
+				background-color transparent
+				&:before
+				&:after
+					top 0
+				&:before
+					transform rotate(133deg) scale(1.2)
+					width 17px
+					height 3px
+				&:after
+					transform rotate(-133deg) scale(1.2)
+					width 17px
+					height 3px
+			
+#user
+	background blanco
+	padding 3px 0
+	position fixed
+	top 58px
+	width 100%
+	@media ( max-width: 425px)
+		top 45px		
+			
+	.user
+		height 34px
+		position relative
+		@media ( max-width: 425px)
+			height 27px
+		
+
+		.user-dates
+			font-size (13 / 16)rem
+			padding 3px 0 0 9px
+			@media ( max-width: 425px)
+				font-size (11 / 16)rem
+			p
+				color plomo2
+				@media ( max-width: 425px)
+					line-height 2em
+					color gris2
+			.close-session
+				opacity .75
+				margin-left 1px
+				@media ( max-width: 425px)
+					font-size (10 / 16)rem
+				
+		.user-img
+			@media ( max-width: 425px)
+				max-width 26px
+			img
+				vertical-align middle
+				display block
+		.user-img
+		.user-dates
+			float left
+	.close-session
+		@media( max-width: 425px)
+			absolute top 0 right 0
+			font-size (11 / 16)rem
+			padding 4px 0
+#header-filter
+	background blanco
+	padding 4px 0
+	position fixed
+	width 100%
+	z-index 2
+	top 56px
+	transition all .4s
+	@media( max-width: 425px)
+		top 46px
+		position static
+		padding-top 51px !important
+	&.w-85
+		width 85.8%
+	.contenedor
+		.title-sec
+			@media( max-width: 425px)
+				position fixed
+				top 45px
+				z-index 1
+				left 0
+				background blanco
+				width 100vw
+				padding 7px 20px
+				box-sizing border-box
+		
+
+//botones
+.button
+	transition all .4s
+	&.button-1
+		font-size (9 / 16)rem
+		color lila3
+		text-decoration underline
+		//border-bottom 1px solid lila3
+	&.button-add
+		background naranja2
+		color blanco
+		font-weight 500
+		width 34px
+		text-align center
+		border-radius 50%
+		display block
+		line-height normal
+		
+		height 34px
+		
+		padding 0
+		text-shadow 0 0 2px alpha(blanco, 40%)
+		
+		&:after
+			content '+'
+			display block
+			position absolute
+			top -6px
+			width 100%
+			height 34px
+			font-size (32 / 16)rem
+		&:hover
+			background #e07e00
+	&.button-close
+		background #e7ae65
+		color blanco
+		font-weight 500
+		width 28px
+		text-align center
+		border-radius 50%
+		line-height 100%
+		font-size (17 / 16)rem
+		padding 5px 0 6px 0
+		opacity .4
+		cursor pointer
+		@media( max-width: 425px)
+			font-size (14 / 16)rem
+			padding 6.5px 0 6.5px 0
+			font-weight 200
+		&:hover
+			opacity 1
+	&.button-purple
+		background morado9
+		line-height 100%
+		font-size (12.5 / 16)rem
+		color blanco
+		font-weight 100
+		padding 4px 13px 8px 13px 
+		display block
+		@media( max-width: 425px)
+			display inline-block
+			padding 4px 27px 8px 27px 
+			font-size (12 / 16)rem
+		&:hover
+			background morado4
+		img
+			display inline
+			margin-right 5px
+			position relative
+			bottom -2px
+	&.button-orange1
+		background naranja2
+		line-height 100%
+		font-size (15.5 / 16)rem
+		letter-spacing 0.5px
+		color blanco
+		font-weight 500
+		text-shadow 0 0 1px alpha(blanco, 80%)
+		padding 8px 25px
+		cursor pointer
+		display block
+		&.button-large
+			padding 10px 75px
+.aprobado
+	background aprobado !important
+.espera
+	background espera !important
+.rechazado
+	background rechazado !important
+
+
+// icons
+
+.ddcommon
+	position relative
+	display -moz-inline-stack
+	zoom 1
+	display inline-block
+	cursor pointer
+	width 100% !important
+
+.borderRadiusTp
+	ul
+		li
+			&:last-child
+				border-radius 0 0 5px 5px
+				border-bottom 0 none #c3c3c3
+ 
+
+
+.ddcommon 
+	.ddArrow
+		display inline-block
+		position absolute
+		top 50%	
+		right 4px
+
+	
+	.ddTitle
+		.ddTitleText
+			display block
+			
+			.ddlabel
+				min-width 80px
+	.ddChild
+		position absolute
+		display none
+		width 100%
+		overflow-y auto
+		overflow-x hidden
+		zoom 1
+		z-index 9999
+		border 1px solid #c3c3c3
+		background-color #fff
+		left -1px
+		min-height 95px
+		li
+			clear both
+			padding 5px
+			background-color #fff
+			border-bottom 1px solid #c3c3c3
+			.description
+				display block
+			&.optgroup
+				padding 0
+				
+
+	.ddArrow
+		width 11px
+		height 9px
+		margin-top -4px
+		background url('../img/icons/arrow-select2.png') no-repeat
+	.ddTitle
+		background #eeeae9
+		.description
+			font-size 12px
+			color #666
+	.ddTitleText
+		padding 5px 15px 5px 5px
+		.ddTitleText
+			padding 0
+		
+ 
+
+
+[data-tooltip] 
+	position relative
+	z-index 2
+	cursor pointer
+	@media( max-width: 425px )
+		display none
+
+[data-tooltip]:before
+	visibility hidden
+	opacity 0
+	pointer-events none	
+	@media( max-width: 425px )
+		display none
+
+[data-tooltip]:after
+	visibility hidden
+	opacity 0
+	pointer-events none
+	@media( max-width: 425px )
+		display none                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+
+[data-tooltip]:before 
+	position absolute
+	bottom 160%
+	left 50%
+	margin-bottom 5px
+	
+	padding 4px 10px
+	width auto
+	border-radius 3px
+	background-color rgba(0,0,0,.8)
+	color #fff
+	content attr(data-tooltip)
+	text-align center
+	transform translateX(-50%)
+	line-height 1.2
+	transition all .4s
+
+[data-tooltip]:after 
+	position absolute
+	bottom 160%
+	left 50%
+	margin-left -5px
+	width 0
+	border-top 5px solid #000
+	border-top 5px solid rgba(0,0,0,.8)
+	border-right 5px solid transparent
+	border-left 5px solid transparent
+	content " "
+	font-size 0
+	line-height 0
+	transition all .4s
+
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after 
+	visibility visible
+	opacity 1
+	bottom 145%
+/************* sprite *****************/
+.smallIcons li, .smallIcons .ddTitleText{
+	background-repeat:no-repeat;
+	height: 13px;
+	display block	
+}
+.smallIcons .check{
+	background-image:url('../img/icons/check.png');
+	background-position: center 0;
+}
+.smallIcons .denegado {
+	background-image:url('../img/icons/aspa.png');
+	background-position: center 0;
+}
+.smallIcons .no-definido{
+	background-image:url('../img/icons/interrogacion.png');
+	background-position: center 0;
+}
+.ddTitleText.check, .ddTitleText.denegado, .ddTitleText.no-definido{
+	background-position: 12px 3px;
+	@media( max-width: 425px ){
+		background-position: center 3px;
+	}
+ }
+ .ddTitleText.no-definido{background-position: 12px 0;}
+ 

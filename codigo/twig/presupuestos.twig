@@ -1,0 +1,706 @@
+{% extends "estructura-interior.twig" %}
+
+{% set seccion = "presupuestos" %}
+{% set info = datos.portada %}
+
+{% block css %}
+	<link rel="stylesheet" href="css/slick.css" />
+	<link rel="stylesheet" href="css/{{ seccion }}.css" media="screen" title="estilo">
+{% endblock %}
+ 
+{% block cuerpo %}
+	<div class="contenedor">
+	   <section class="presupuestos-contenido">
+	   		<aside id="status">
+	   			<ul>
+	   				<li>
+	   					<button class="item-status active item-status-all">Todos</button>
+	   				</li>
+	   				<li>
+	   					<button class="item-status">
+	   						Aprobados
+							<span class="number">
+			   					<span class="value aprobado">11</span>
+			   				</span>
+						</button>
+	   				</li>
+	   				<li>
+	   					<button class="item-status">
+	   						En espera
+							<span class="number">
+			   					<span class="value espera">2</span>
+			   				</span>
+						</button>
+	   				</li>
+
+	   				<li>
+	   					<button class="item-status">
+	   						Rechazados
+							<span class="number">
+			   					<span class="value rechazado">3</span>
+			   				</span>
+						</button>
+	   				</li>
+	   			</ul>
+	   		</aside>
+			
+			<button id="add" class="button button-add" onclick="window.location.href='nuevo-presupuesto.html'"> </button>
+
+
+			<section id="result-filter">
+
+				<article class="item-result-cliente">
+					<header>
+						<div class="nom_cliente">
+							<h4>Cencosud <span class="rz"> Cencosud S.A.</span></h4>
+						</div>
+						<div class="status_cliente">
+							<ul>
+				   				<li>
+				   					<button class="item-status active">
+				   						Todos
+										<span class="number">
+						   					<span class="value todo">23</span>
+						   				</span>
+									</button>
+				   				</li>
+
+				   				<li>
+				   					<button class="item-status">
+				   						Aprobados
+										<span class="number">
+						   					<span class="value aprobado">2</span>
+						   				</span>
+									</button>
+				   				</li>
+
+				   				<li>
+				   					<button class="item-status">
+				   						En espera
+										<span class="number">
+						   					<span class="value espera">1</span>
+						   				</span>
+									</button>
+				   				</li>
+
+				   				<li>
+				   					<button class="item-status">
+				   						Rechazados
+										<span class="number">
+						   					<span class="value rechazado">1</span>
+						   				</span>
+									</button>
+				   				</li>
+				   			</ul>
+						</div>
+						
+					</header>
+
+					
+					<input id="tab1" type="checkbox" name="">
+					<label for="tab1" class="tab-expander"></label>	
+
+					<div class="result-marcas">
+						<table class="tabla formSection ">
+							<thead>
+								<tr>
+									<th class="rz_social-th">Razon Social</th>
+									<th>Cliente</th>
+									<th>Proyecto</th>
+									<th class="presupuesto">Nº Presupuesto</th>
+									<th class="ejecutivo">Ejecutivo</th>
+									<th class="aprobacion" >Aprobación</th>
+									<th class="editar-resp">-</th>
+									<th class="estado">Estado</th>
+									
+									<th class="oc">OC</th>
+									<th>Factura</th>
+									<th>Modificación</th>
+									<th class="editar-lapt"> </th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="tab-cliente-resp tab1a">
+									<td colspan="12"><button class="tab-control">Web responsabilidad social</button></td>
+									
+								</tr>
+								<!-- ate <button class="open-tab-cliente-list-resp">Abreteee</button> -->
+								<tr class="tab-cliente-list-resp" >
+
+
+									<td class="rz_social-td">Cencosud<span class="rz">| Cencosud S.A.</span></td>
+									<td data-title="Cliente">Wong 1</td>
+									<td data-title="Proyecto">Web Responsabilidad WONG 1</td>
+									<td data-title="N° ppto" class="ppto">
+										<a href="#">Cencosud-Presupu<br>esto-ATOM20162...</a>
+										<div class="pdf"><a href="#"><img   src="img/icons/pdf.png"></a></div>
+									</td>
+								
+									<td data-title="Ejecutivo">Ileana1 C.</td>
+									
+									<td class="editar-resp-move">
+										<div class="editar-lapt">
+											<button type="button" class="editButton">
+												<span class="icon-editar"></span>
+											</button>
+
+											<div class="actionButtons">
+												<button class="saveButton activo" type="submit"><span class="icon-guardar"></span></button>
+												<a href="#" class="cancelButton">X</a>
+											</div>
+										</div>
+									</td>
+
+									<td class="aprobacion" data-title="Aprobación">
+										<select class="lista-icons padd5"  name="lista-iconss"  data-usesprite="smallIcons" disabled>
+											<option>----</option>
+											<option class="check" value="aprobado">  </option>
+											<option class="denegado" value="denegado">  </option>
+											<option class="no-definido" value="no definido"> </option>
+										</select>
+									</td>
+									
+									<td class="padd5" data-title="Estado">
+									<select class="lista-icons" disabled>
+										<option>----</option>
+										<option>Terminado</option>
+										<option selected="">En proceso</option>
+										<option>Casi casi</option>
+									</select></td>
+									<td class="padd5" data-title="OC">
+										<select class="lista-icons" name="lista-iconss"  data-usesprite="smallIcons" disabled>
+											<option>----</option>
+											<option class="check" value="aprobado">  </option>
+											<option class="denegado" value="denegado">  </option>
+											<option class="no-definido" value="no definido"> </option>
+										</select>
+									</td>
+									<td class="padd5" data-title="Factura"><input type="text" value="0008284" class="camp" name="" maxlength="7" disabled></td>
+									<td data-title="Modificación" class="modificado">07/05/17</td>
+									<td class="editar-lapt">
+										<button type="button" class="editButton">
+											<span class="icon-editar"></span>
+										</button>
+
+										<div class="actionButtons">
+											<button class="saveButton activo" type="submit"><span class="icon-guardar"></span></button>
+											<a href="#" class="cancelButton">X</a>
+										</div>
+
+									</td>
+
+								</tr>
+
+
+								<tr class="tab-cliente-resp tab2a">
+									<td colspan="12"><button class="tab-control">Web responsabilidad social</button></td>
+									
+								</tr>
+
+								<tr class="tab-cliente-list-resp">
+									<td class="rz_social-td">Cencosud<span class="rz">| Cencosud S.A.</span></td>
+									<td data-title="Cliente">Wong 2</td>
+									<td data-title="Proyecto">Web Responsabilidad WONG 2</td>
+									<td data-title="N° ppto" class="ppto">
+										<a href="#">Cencosud-Presupu<br>esto-ATOM20162...</a>
+										<div class="pdf"><a href="#"><img src="img/icons/pdf.png"></a></div>
+									</td>
+								
+									<td data-title="Ejecutivo">Ileana C.</td>
+									<td class="editar-resp-move">
+										<div class="editar-lapt">
+											<button type="button" class="editButton">
+												<span class="icon-editar"></span>
+											</button>
+
+											<div class="actionButtons">
+												<button class="saveButton activo" type="submit"><span class="icon-guardar"></span></button>
+												<a href="#" class="cancelButton">X</a>
+											</div>
+										</div>
+									</td>
+									<td class="aprobacion" data-title="Aprobación" >
+									 	<select class="lista-icons" name="lista-iconss"  data-usesprite="smallIcons" disabled>
+											<option>----</option>
+											<option class="check" value="aprobado">  </option>
+											<option class="denegado" value="denegado">  </option>
+											<option class="no-definido" value="no definido"> </option>
+										</select>
+									</td>
+									
+									<td class="padd5" data-title="Estado">
+									<select class="lista-icons" disabled>
+										<option>----</option>
+										<option>Terminado</option>
+										<option selected="">En proceso</option>
+										<option>Casi casi</option>
+									</select></td>
+									<td class="padd5" data-title="OC">
+										<select class="lista-icons" name="lista-iconss"  data-usesprite="smallIcons" disabled>
+											<option>----</option>
+											<option class="check" value="aprobado">  </option>
+											<option class="denegado" value="denegado">  </option>
+											<option class="no-definido" value="no definido"> </option>
+										</select>
+									</td>
+									<td class="padd5" data-title="Factura"><input type="text" value="0008284" class="camp " name="" maxlength="7" disabled></td>
+									<td data-title="Modificación" class="modificado">07/05/17</td>
+									<td class="editar-lapt">
+										<button type="button" class="editButton">
+											<span class="icon-editar"></span>
+										</button>
+
+										<div class="actionButtons">
+											<button class="saveButton activo" type="submit"><span class="icon-guardar"></span></button>
+											 <a href="#" class="cancelButton">X</a>
+										</div>
+
+									</td>
+
+								</tr>
+
+
+
+								<tr class="tab-cliente-resp tab3a">
+									<td colspan="12"><button class="tab-control">Web responsabilidad social</button></td>
+									
+								</tr>
+								<tr class="tab-cliente-list-resp">
+									<td class="rz_social-td">Cencosud<span class="rz">| Cencosud S.A.</span></td>
+									<td data-title="Cliente">Wong</td>
+									<td data-title="Proyecto">Web Responsabilidad WONG</td>
+									<td data-title="N° ppto" class="ppto">
+										<a href="#">Cencosud-Presupu<br>esto-ATOM20162...</a>
+										<div class="pdf"><a href="#"><img src="img/icons/pdf.png"></a></div>
+									</td>
+								
+									<td data-title="Ejecutivo">Ileana C.</td>
+									<td class="editar-resp-move">
+										<div class="editar-lapt">
+											<button type="button" class="editButton">
+												<span class="icon-editar"></span>
+											</button>
+
+											<div class="actionButtons">
+												<button class="saveButton activo" type="submit"><span class="icon-guardar"></span></button>
+												<a href="#" class="cancelButton">X</a>
+											</div>
+										</div>
+									</td>
+									<td class="aprobacion" data-title="Aprobación">
+										<select class="lista-icons" name="lista-iconss"  data-usesprite="smallIcons" disabled>
+											<option>----</option>
+											<option class="check" value="aprobado">  </option>
+											<option class="denegado" value="denegado">  </option>
+											<option class="no-definido" value="no definido"> </option>
+										</select>
+									</td>
+									
+									<td class="padd5" data-title="Estado">
+									<select class="lista-icons" disabled>
+										<option>----</option>
+										<option>Terminado</option>
+										<option selected="">En proceso</option>
+										<option>Casi casi</option>
+									</select></td>
+									<td class="padd5" data-title="OC">
+										<select class="lista-icons" name="lista-iconss"  data-usesprite="smallIcons" disabled>
+											<option>----</option>
+											<option class="check" value="aprobado">  </option>
+											<option class="denegado" value="denegado">  </option>
+											<option class="no-definido" value="no definido"> </option>
+										</select>
+									</td>
+									<td class="padd5" data-title="Factura"><input type="text" value="0008284" class="camp " name="" maxlength="7" disabled></td>
+									<td data-title="Modificación" class="modificado">07/05/17</td>
+									<td class="editar-lapt">
+										<button type="button" class="editButton">
+											<span class="icon-editar"></span>
+										</button>
+
+										<div class="actionButtons">
+											<button class="saveButton activo" type="submit"><span class="icon-guardar"></span></button>
+											 <a href="#" class="cancelButton">X</a>
+										</div>
+
+									</td>
+
+								</tr>
+
+								<tr class="tab-cliente-resp tab4a">
+									<td colspan="12"><button class="tab-control">Web responsabilidad social</button></td>
+									
+								</tr>
+								<tr class="tab-cliente-list-resp">
+									<td class="rz_social-td">Cencosud<span class="rz">| Cencosud S.A.</span></td>
+									<td data-title="Cliente">Wong</td>
+									<td data-title="Proyecto">Web Responsabilidad WONG</td>
+									<td data-title="N° ppto" class="ppto">
+										<a href="#">Cencosud-Presupu<br>esto-ATOM20162...</a>
+										<div class="pdf"><a href="#"><img src="img/icons/pdf.png"></a></div>
+									</td>
+								
+									<td data-title="Ejecutivo">Ileana C.</td>
+									<td class="editar-resp-move">
+										<div class="editar-lapt">
+											<button type="button" class="editButton">
+												<span class="icon-editar"></span>
+											</button>
+
+											<div class="actionButtons">
+												<button class="saveButton activo" type="submit"><span class="icon-guardar"></span></button>
+												<a href="#" class="cancelButton">X</a>
+											</div>
+										</div>
+									</td>
+									<td class="aprobacion" data-title="Aprobación">
+										<select class="lista-icons" name="lista-iconss"  data-usesprite="smallIcons" disabled>
+											<option>----</option>
+											<option class="check" value="aprobado">  </option>
+											<option class="denegado" value="denegado">  </option>
+											<option class="no-definido" value="no definido"> </option>
+										</select>
+									</td>
+									
+									<td class="padd5" data-title="Estado">
+									<select class="lista-icons" disabled>
+										<option>----</option>
+										<option>Terminado</option>
+										<option selected="">En proceso</option>
+										<option>Casi casi</option>
+									</select></td>
+									<td class="padd5" data-title="OC">
+										<select class="lista-icons" name="lista-iconss"  data-usesprite="smallIcons" disabled>
+											<option>----</option>
+											<option class="check" value="aprobado">  </option>
+											<option class="denegado" value="denegado">  </option>
+											<option class="no-definido" value="no definido"> </option>
+										</select>
+									</td>
+									<td class="padd5" data-title="Factura"><input type="text" value="0008284" class="camp " name="" maxlength="7" disabled></td>
+									<td data-title="Modificación" class="modificado">07/05/17</td>
+									<td class="editar-lapt">
+										<button type="button" class="editButton">
+											<span class="icon-editar"></span>
+										</button>
+
+										<div class="actionButtons">
+											<button class="saveButton activo" type="submit"><span class="icon-guardar"></span></button>
+											 <a href="#" class="cancelButton">X</a>
+										</div>
+
+									</td>
+
+								</tr>
+
+								 
+
+
+								
+							</tbody>
+						</table>
+					</div>
+				</article>
+
+
+				<article class="item-result-cliente">
+					<header>
+						<div class="nom_cliente">
+							<h4>Unilever <span class="rz"> Unilever Andina Perú S.A.</span></h4>
+						</div>
+						<div class="status_cliente">
+							<ul>
+				   				<li>
+				   					<button class="item-status active">
+				   						Todos
+										<span class="number">
+						   					<span class="value todo">23</span>
+						   				</span>
+									</button>
+				   				</li>
+
+				   				<li>
+				   					<button class="item-status">
+				   						Aprobados
+										<span class="number">
+						   					<span class="value aprobado">2</span>
+						   				</span>
+									</button>
+				   				</li>
+
+				   				<li>
+				   					<button class="item-status">
+				   						En espera
+										<span class="number">
+						   					<span class="value espera">1</span>
+						   				</span>
+									</button>
+				   				</li>
+
+				   				<li>
+				   					<button class="item-status">
+				   						Rechazados
+										<span class="number">
+						   					<span class="value rechazado">1</span>
+						   				</span>
+									</button>
+				   				</li>
+				   			</ul>
+						</div>
+						
+					</header>
+
+					
+					<input id="tab2" type="checkbox" name="">
+					<label for="tab2" class="tab-expander"></label>	
+
+					<div class="result-marcas">
+						<table class="tabla formSection ">
+							<thead>
+								<tr>
+									<th class="rz_social-th">Razon Social</th>
+									<th>Cliente</th>
+									<th>Proyecto</th>
+									<th class="presupuesto">Nº Presupuesto</th>
+									<th class="ejecutivo">Ejecutivo</th>
+									<th class="aprobacion" >Aprobación</th>
+									<th class="editar-resp">-</th>
+									<th class="estado">Estado</th>
+									
+									<th class="oc">OC</th>
+									<th>Factura</th>
+									<th>Modificación</th>
+									<th class="editar-lapt"> </th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="tab-cliente-resp tab5a">
+									<td colspan="12"><button class="tab-control">Web responsabilidad social</button></td>
+									
+								</tr>
+								<tr class="tab-cliente-list-resp">
+									<td class="rz_social-td">Unilever<span class="rz">| Unilever Andina Perú S.A.</span></td>
+									<td data-title="Cliente">Wong</td>
+									<td data-title="Proyecto">Web Responsabilidad WONG</td>
+									<td data-title="N° ppto" class="ppto">
+										<a href="#">Cencosud-Presupu<br>esto-ATOM20162...</a>
+										<div class="pdf"><a href="#"><img data-tooltip="Descargar" src="img/icons/pdf.png"></a></div>
+									</td>
+								
+									<td data-title="Ejecutivo">Ileana C.</td>
+									<td class="editar-resp-move">
+										<div class="editar-lapt">
+											<button type="button" class="editButton">
+												<span class="icon-editar"></span>
+											</button>
+
+											<div class="actionButtons">
+												<button class="saveButton activo" type="submit"><span class="icon-guardar"></span></button>
+												<a href="#" class="cancelButton">X</a>
+											</div>
+										</div>
+									</td>
+									<td class="aprobacion" data-title="Aprobación">
+										<select class="lista-icons" name="lista-iconss"  data-usesprite="smallIcons" disabled>
+											<option>----</option>
+											<option class="check" value="aprobado">  </option>
+											<option class="denegado" value="denegado">  </option>
+											<option class="no-definido" value="no definido"> </option>
+										</select>
+									</td>
+									
+									<td class="padd5" data-title="Estado">
+									<select class="lista-icons" disabled>
+										<option>----</option>
+										<option>Terminado</option>
+										<option selected="">En proceso</option>
+										<option>Casi casi</option>
+									</select></td>
+									<td class="padd5" data-title="OC">
+										<select class="lista-icons" name="lista-iconss"  data-usesprite="smallIcons" disabled>
+											<option>----</option>
+											<option class="check" value="aprobado">  </option>
+											<option class="denegado" value="denegado">  </option>
+											<option class="no-definido" value="no definido"> </option>
+										</select>
+									</td>
+									<td class="padd5" data-title="Factura"><input type="text" value="0008284" class="camp " name="" maxlength="7" disabled></td>
+									<td data-title="Modificación" class="modificado">07/05/17</td>
+									<td class="editar-lapt">
+										<button type="button" class="editButton">
+											<span class="icon-editar"></span>
+										</button>
+
+										<div class="actionButtons">
+											<button class="saveButton activo" type="submit"><span class="icon-guardar"></span></button>
+											 <a href="#" class="cancelButton">X</a>
+										</div>
+
+									</td>
+
+								</tr>
+
+
+								
+							</tbody>
+						</table>
+					</div>
+				</article>
+
+
+				<article class="item-result-cliente">
+					<header>
+						<div class="nom_cliente">
+							<h4>Financiero <span class="rz"> Financiero Proempresas S.A.</span></h4>
+						</div>
+						<div class="status_cliente">
+							<ul>
+				   				<li>
+				   					<button class="item-status active">
+				   						Todos
+										<span class="number">
+						   					<span class="value todo">23</span>
+						   				</span>
+									</button>
+				   				</li>
+
+				   				<li>
+				   					<button class="item-status">
+				   						Aprobados
+										<span class="number">
+						   					<span class="value aprobado">2</span>
+						   				</span>
+									</button>
+				   				</li>
+
+				   				<li>
+				   					<button class="item-status">
+				   						En espera
+										<span class="number">
+						   					<span class="value espera">1</span>
+						   				</span>
+									</button>
+				   				</li>
+
+				   				<li>
+				   					<button class="item-status">
+				   						Rechazados
+										<span class="number">
+						   					<span class="value rechazado">1</span>
+						   				</span>
+									</button>
+				   				</li>
+				   			</ul>
+						</div>
+						
+					</header>
+
+					
+					<input id="tab3" type="checkbox" name="">
+					<label for="tab3" class="tab-expander"></label>	
+
+					<div class="result-marcas">
+						<table class="tabla formSection ">
+							<thead>
+								<tr>
+									<th class="rz_social-th">Razon Social</th>
+									<th>Cliente</th>
+									<th>Proyecto</th>
+									<th class="presupuesto">Nº Presupuesto</th>
+									<th class="ejecutivo">Ejecutivo</th>
+									<th class="aprobacion" >Aprobación</th>
+									<th class="editar-resp">-</th>
+									<th class="estado">Estado</th>
+									
+									<th class="oc">OC</th>
+									<th>Factura</th>
+									<th>Modificación</th>
+									<th class="editar-lapt"> </th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="tab-cliente-resp tab6a">
+									<td colspan="12"><button class="tab-control">Web responsabilidad social</button></td>
+									
+								</tr>
+								<tr class="tab-cliente-list-resp">
+									<td class="rz_social-td">Financiero <span class="rz">| Financiero Proempresas S.A.</span></td>
+									<td data-title="Cliente">Wong</td>
+									<td data-title="Proyecto">Web Responsabilidad WONG</td>
+									<td data-title="N° ppto" class="ppto">
+										<a href="#">Cencosud-Presupu<br>esto-ATOM20162...</a>
+										<div class="pdf"><a href="#"><img data-tooltip="Descargar" src="img/icons/pdf.png"></a></div>
+									</td>
+								
+									<td data-title="Ejecutivo">Ileana C.</td>
+									<td class="editar-resp-move">
+										<div class="editar-lapt">
+											<button type="button" class="editButton">
+												<span class="icon-editar"></span>
+											</button>
+
+											<div class="actionButtons">
+												<button class="saveButton activo" type="submit"><span class="icon-guardar"></span></button>
+												<a href="#" class="cancelButton">X</a>
+											</div>
+										</div>
+									</td>
+									<td class="aprobacion" data-title="Aprobación">
+										<select class="lista-icons" name="lista-iconss"  data-usesprite="smallIcons" disabled>
+											<option>----</option>
+											<option class="check" value="aprobado">  </option>
+											<option class="denegado" value="denegado">  </option>
+											<option class="no-definido" value="no definido"> </option>
+										</select>
+									</td>
+									
+									<td class="padd5" data-title="Estado">
+									<select class="lista-icons" disabled>
+										<option>----</option>
+										<option>Terminado</option>
+										<option selected="">En proceso</option>
+										<option>Casi casi</option>
+									</select></td>
+									<td class="padd5" data-title="OC">
+										<select class="lista-icons" name="lista-iconss"  data-usesprite="smallIcons" disabled>
+											<option>----</option>
+											<option class="check" value="aprobado">  </option>
+											<option class="denegado" value="denegado">  </option>
+											<option class="no-definido" value="no definido"> </option>
+										</select>
+									</td>
+									<td class="padd5" data-title="Factura"><input type="text" value="0008284" class="camp " name="" maxlength="7" disabled></td>
+									<td data-title="Modificación" class="modificado">07/05/17</td>
+									<td class="editar-lapt">
+										<button type="button" class="editButton">
+											<span class="icon-editar"></span>
+										</button>
+
+										<div class="actionButtons">
+											<button class="saveButton activo" type="submit"><span class="icon-guardar"></span></button>
+											 <a href="#" class="cancelButton">X</a>
+										</div>
+
+									</td>
+
+								</tr>
+
+
+								
+							</tbody>
+						</table>
+					</div>
+				</article>
+				
+			</section>
+	   </section>
+   </div>
+{% endblock %}
+
+
+{% block js %}
+		
+<script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/jquery.dd.min.js"></script>
+
+{% endblock %}

@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta charset="utf8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0" />
+		<link rel="icon" href="img/icono.png" type="image/png">
+		<link rel="shortcut icon" href="img/icono.png" />
+		<title>ATK Extranet</title>
+		<link rel="stylesheet" href="css/general.css">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet" />
+		<link rel="stylesheet" href="css/nuevo-presupuesto.css" media="screen" title="estilo">
+		<script>
+			document.createElement("picture");
+		</script>
+	</head>
+	<body>
+		<div id="pedido-new">
+			<div class="container-new">
+				<button class="button button-close">
+					<span class="x">X</span>
+					<span class="back">
+						< </span>
+				</button>
+				<h3>DESCRIPCIÓN DEL PEDIDO</h3>
+				<div class="form-pedido">
+					<div class="label-group">
+						<div class="label label-group-display">
+							<label>Item</label>
+							<input type="text" name="" class="campo"> </div>
+					</div>
+					<div class="label-group">
+						<div class="label label-number">
+							<label>Tiempo estimado en días</label>
+							<div class="quantity">
+								<input type="number" step="1" name="" min="1" max="125" value="125" class="campo" max-length="3"> </div>
+						</div>
+					</div>
+					<div class="label-group">
+						<div class="label label-group-display">
+							<label>Detalle</label>
+							<textarea class="campo" rows="3"></textarea>
+						</div>
+					</div>
+					<div class="label-group">
+						<div class="label label-number label-number1">
+							<label>Hosting
+								<br>en meses</label>
+							<div class="quantity">
+								<input type="number" step="1" name="" min="1" max="12" value="12" class="campo campo-number" max-length="2"> </div>
+						</div>
+						<div class="label por-mes">
+							<label>Monto por mes</label>
+							<input type="text" name="" class="campo monto" value="S/."> </div>
+					</div>
+					<div class="label-group">
+						<div class="label">
+							<label>Inversión total del proyecto</label>
+						</div>
+						<div class="label">
+							<input type="text" name="" class="campo" value="S/."> </div>
+					</div>
+					<div class="label-group">
+						<div class="label envio">
+							<input type="submit" name="" value="Guardar item" class="enviar"> </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<aside id="nav-left">
+			<div class="nav-left-cnt">
+				<div class="user">
+					<span class="user-img">
+						<img src="img/icons/usuario-ico.png" alt="usuario"> </span>
+					<div class="user-dates">
+						<p>Fulanito sjd</p>
+						<button class="close-session button button-1">Cerrar sesión</button>
+					</div>
+				</div>
+				<nav class="nav-user">
+					<ul>
+						<li>
+							<input type="checkbox" id="controles">
+							<label class="subnav subnav-item">
+								<a>
+									<span class="tit">Otros sistemas</span>
+								</a>
+							</label>
+							<ul>
+								<li>
+									<a href="#">Matrices</a>
+								</li>
+								<li>
+									<a href="#">Matrices</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								<span class="tit">Otros sistemas</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="tit">Otros sistemas</span>
+							</a>
+						</li>
+					</ul>
+					<div class="other-nav">
+						<a href="#" class="button button-purple">
+							<img src="img/icons/icono-raro2.jpg">
+							<span>Botón botón</span>
+						</a>
+					</div>
+				</nav>
+				<div class="icons-bottom">
+					<ul>
+						<li>
+							<a href="#">
+								<img src="img/icons/ico-bottom-1.png" />
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/icons/ico-bottom-2.png" />
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="img/icons/ico-bottom-3.png" />
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</aside>
+		<section id="main-right">
+			<header id="header">
+				<div class="contenedor">
+					<nav class="nav-notifications">
+						<button class="control-menu">
+							<span></span>
+						</button>
+						<ul class="nav-noti-list">
+							<li class="noti-active noti-1">
+								<a href="#">
+									<div class="noti-categoria"> Notificaciones
+										<span class="number">
+											<span class="value">11</span>
+										</span>
+									</div>
+								</a>
+								<div class="subnoti">
+									<article>
+										<a href="#" class="no-visit">
+											<div class="subnoti-item">
+												<p>Se ha agregado nuevo presupuesto</p>
+												<div class="subnoti-detail">
+													<span class="logo">Cencosud</span> |
+													<span title="Martes 29 de agosto del 2017 a las 9:00">hace 1 hora</span>
+												</div>
+											</div>
+										</a>
+										<div class="close-subnoti">
+											<button class="close" data-tooltip="Eliminar" data-placement="bottom">X</button>
+										</div>
+									</article>
+									<article>
+										<a href="#" class="no-visit">
+											<div class="subnoti-item">
+												<p>Se ha agregado nuevo presupuesto</p>
+												<div class="subnoti-detail">
+													<span class="logo">Cencosud</span> |
+													<span title="Martes 29 de agosto del 2017 a las 9:00">hace 1 hora</span>
+												</div>
+											</div>
+										</a>
+										<div class="close-subnoti">
+											<button class="close" data-tooltip="Eliminar" data-placement="bottom">X</button>
+										</div>
+									</article>
+								</div>
+							</li>
+							<li class="noti-2">
+								<a href="#">
+									<div class="noti-categoria"> Notificaciones
+										<span class="number">
+											<span class="value">0</span>
+										</span>
+									</div>
+								</a>
+								<div class="subnoti">
+									<article>
+										<a href="#" class="no-visit">
+											<div class="subnoti-item">
+												<p>Se ha agregado nuevo presupuesto</p>
+												<div class="subnoti-detail">
+													<span class="logo">Cencosud</span> |
+													<span title="Martes 29 de agosto del 2017 a las 9:00">hace 1 hora</span>
+												</div>
+											</div>
+										</a>
+										<div class="close-subnoti">
+											<button class="close" data-tooltip="Eliminar" data-placement="bottom">X</button>
+										</div>
+									</article>
+								</div>
+							</li>
+							<li class="noti-active noti-1">
+								<a href="#">
+									<div class="noti-categoria"> Notificaciones
+										<span class="number">
+											<span class="value">3</span>
+										</span>
+									</div>
+								</a>
+								<div class="subnoti">
+									<article>
+										<a href="#" class="no-visit">
+											<div class="subnoti-item">
+												<p>Se ha agregado nuevo presupuesto</p>
+												<div class="subnoti-detail">
+													<span class="logo">Cencosud</span> |
+													<span title="Martes 29 de agosto del 2017 a las 9:00">hace 1 hora</span>
+												</div>
+											</div>
+										</a>
+										<div class="close-subnoti">
+											<button class="close" data-tooltip="Eliminar" data-placement="bottom">X</button>
+										</div>
+									</article>
+									<article>
+										<a href="#" class="no-visit">
+											<div class="subnoti-item">
+												<p>Se ha agregado nuevo presupuesto </p>
+												<div class="subnoti-detail">
+													<span class="logo">Cencosud</span> |
+													<span title="Lunes 28 de agosto del 2017 a las 13:00">hace 1 hora</span>
+												</div>
+											</div>
+										</a>
+										<div class="close-subnoti">
+											<button class="close" data-tooltip="Eliminar" data-placement="bottom">X</button>
+										</div>
+									</article>
+									<article>
+										<a href="#">
+											<div class="subnoti-item">
+												<p>Se ha agregado nuevo presupuesto</p>
+												<div class="subnoti-detail">
+													<span class="logo">Cencosud</span> |
+													<span title="Lunes 28 de agosto del 2017 a las 11:00">hace 1 hora</span>
+												</div>
+											</div>
+										</a>
+										<div class="close-subnoti">
+											<button class="close" data-tooltip="Eliminar" data-placement="bottom">X</button>
+										</div>
+									</article>
+									<article>
+										<a href="#">
+											<div class="subnoti-item">
+												<p>Se ha agregado nuevo presupuesto</p>
+												<div class="subnoti-detail">
+													<span class="logo">Cencosud</span> |
+													<span title="Lunes 28 de agosto del 2017 a las 8:40">hace 1 hora</span>
+												</div>
+											</div>
+										</a>
+										<div class="close-subnoti">
+											<button class="close" data-tooltip="Eliminar" data-placement="bottom">X</button>
+										</div>
+									</article>
+								</div>
+							</li>
+						</ul>
+					</nav>
+					<aside class="buscador">
+						<form method="post" class="search">
+							<input type="submit" name="" class="submit">
+							<input type="text" class="text" name="" placeholder="Buscar" /> </form>
+					</aside>
+					<h1 class="logo">
+						<a href="index.html">
+							<img src="img/logo-atk-v2.png" alt="Atk" />
+						</a>
+					</h1>
+				</div>
+			</header>
+			<section id="header-filter">
+				<div class="contenedor">
+					<div class="title-sec">
+						<h3>Presupuestos
+							<span class="line">|</span>
+							<span class="date">2017</span>
+						</h3>
+					</div>
+					<div class="filter-all">
+						<form>
+							<div class="sel select-option select-anio">
+								<select name="anio" id="anio">
+									<option value="">Año</option>
+									<option value="1">2017</option>
+									<option value="2">2016</option>
+									<option value="3">2015</option>
+									<option value="4">2014</option>
+									<option value="5">2013</option>
+								</select>
+							</div>
+							<div class="sel select-option select-mes">
+								<select name="mes" id="mes">
+									<option value="">Mes</option>
+									<option value="2">Enero</option>
+									<option value="3">Febrero</option>
+									<option value="4">Marzo</option>
+									<option value="5">Abril</option>
+								</select>
+							</div>
+							<div class="sel select-option select-cliente">
+								<select name="cliente" id="cliente">
+									<option value="">Cliente</option>
+									<option value="2">Cencosud</option>
+									<option value="3">Unilever</option>
+									<option value="4">Financiero</option>
+								</select>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+			<section class="pagina">
+				<div class="contenedor">
+					<section class="new-presu">
+						<header class="header-presu">
+							<h2>
+								<button class="button button-close" onclick="history.back();">X</button>Nuevo presupuesto</h2>
+						</header>
+						<article class="item-new">
+							<header class="item-new-tit"> 1. Datos </header>
+							<section class="item-new-form">
+								<div class="label-group">
+									<div class="label w-2-5">
+										<div class="selct1">
+											<select class="campo selct1">
+												<option>Categoria</option>
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+											</select>
+										</div>
+									</div>
+									<div class="label w-2-5">
+										<div class="selct1">
+											<select class="campo">
+												<option>Marca</option>
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+											</select>
+										</div>
+									</div>
+									<div class="label w-3 label-doble label-separar">
+										<label>Contacto</label>
+										<input type="text" name="" class="campo" placeholder="Contacto" /> </div>
+								</div>
+								<div class="label-group">
+									<div class="label  w-5 label-doble ">
+										<label>Proyecto</label>
+										<input type="text" name="" class="campo" placeholder="Proyectos" /> </div>
+									<div class="label w-2 label-doble label-separar">
+										<label>Fecha</label>
+										<input type="date" name="" id="date-new" class="campo">
+										<div class="calendar-active">
+											<span class="icon-calendario calendar"></span>
+										</div>
+									</div>
+								</div>
+								<div class="label-group label-group-no">
+									<div class="label w-6">
+										<label>Lista de entregables</label>
+										<textarea class="campo" rows="5"> </textarea>
+									</div>
+									<div class="label w-6">
+										<label>Estructura del proyecto</label>
+										<textarea class="campo" rows="5"></textarea>
+									</div>
+								</div>
+							</section>
+						</article>
+						<article class="item-new">
+							<header class="item-new-tit"> 2. Descripción del pedido </header>
+							<section class="item-new-form">
+								<table class="tabla formSection padd-tabla">
+									<thead>
+										<tr>
+											<th>Item</th>
+											<th>Tiempo estimado</th>
+											<th>Hosting</th>
+											<th class="w-hosting">Monto por mes
+												<br>del Hosting</th>
+											<th>Inversión total</th>
+											<th class="arrow-select">
+												<img src="img/icons/arrow-select1_a.png" />
+											</th>
+											<th class="add">
+												<button class="button button-add open-modal1"> </button>
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="alert-tr">
+											<td class="pedido-tit" data-title="Item">
+												<a href="#">Portal web 1</a>
+											</td>
+											<td data-title="Tiempo estimado">60 días</td>
+											<td data-title="Hosting">2 meses</td>
+											<td data-title="Monto por mes del Hosting">$12 000</td>
+											<td data-title="Inversión total">$ 45 746</td>
+											<td>
+												<div class="alert1">
+													<img src="img/icons/alerta-2.png" />
+												</div>
+											</td>
+											<td> </td>
+										</tr>
+										<tr>
+											<td class="pedido-tit" data-title="Item">
+												<a href="#">Portal web</a>
+											</td>
+											<td data-title="Tiempo estimado">60 días</td>
+											<td data-title="Hosting">2 meses</td>
+											<td data-title="Monto por mes del Hosting">$12 000</td>
+											<td data-title="Inversión total">$ 45 746</td>
+											<td> </td>
+											<td> </td>
+										</tr>
+										<tr>
+											<td class="pedido-tit" data-title="Item">
+												<a href="#">Portal web</a>
+											</td>
+											<td data-title="Tiempo estimado">60 días</td>
+											<td data-title="Hosting">2 meses</td>
+											<td data-title="Monto por mes del Hosting">$12 000</td>
+											<td data-title="Inversión total">$ 45 746</td>
+											<td> </td>
+											<td> </td>
+										</tr>
+										<tr>
+											<td class="pedido-tit" data-title="Item">
+												<a href="#">Portal web</a>
+											</td>
+											<td data-title="Tiempo estimado">60 días</td>
+											<td data-title="Hosting">2 meses</td>
+											<td data-title="Monto por mes del Hosting">$12 000</td>
+											<td data-title="Inversión total">$ 45 746</td>
+											<td> </td>
+											<td> </td>
+										</tr>
+									</tbody>
+								</table>
+							</section>
+						</article>
+						<article class="item-new">
+							<header class="item-new-tit"> 3. Términos y condiciones </header>
+							<section class="item-new-form">
+								<div class="add-item">
+									<label>Nuevo item</label>
+									<input type="text" name="" class="campo">
+									<input type="submit" name="" class="add-item-button" value="Agregar" /> </div>
+								<div class="scroll-table">
+									<table class="tabla tabla2">
+										<tbody>
+											<tr>
+												<td>Los precio es están en Nuevos Soles</td>
+												<td class="delete">
+													<button class="borrar">X</button>
+												</td>
+											</tr>
+											<tr>
+												<td>Los precioes incluyen IGV</td>
+												<td class="delete">
+													<button class="borrar">X</button>
+												</td>
+											</tr>
+											<tr>
+												<td>ATOMIKAL no procederás hasta contar con una orden de compra formal que haga referencia a este presupuesto y firma del mismo</td>
+												<td class="delete">
+													<button class="borrar">X</button>
+												</td>
+											</tr>
+											<tr>
+												<td>La firma de la presente propuesta señala la conformidad del cliente firmante con los alcances, procedimientos, términos y condiciones que aquí se describen.</td>
+												<td class="delete">
+													<button class="borrar">X</button>
+												</td>
+											</tr>
+											<tr>
+												<td>ATOMIKAL no procederás hasta contar con una orden de compra formal que haga referencia a este presupuesto y firma del mismo</td>
+												<td class="delete">
+													<button class="borrar">X</button>
+												</td>
+											</tr>
+											<tr>
+												<td>La firma de la presente propuesta señala la conformidad del cliente firmante con los alcances, procedimientos, términos y condiciones que aquí se describen.</td>
+												<td class="delete">
+													<button class="borrar">X</button>
+												</td>
+											</tr>
+											<tr>
+												<td>La firma de la presente propuesta señala la conformidad del cliente firmante con los alcances, procedimientos, términos y condiciones que aquí se describen.</td>
+												<td class="delete">
+													<button class="borrar">X</button>
+												</td>
+											</tr>
+											<tr>
+												<td>ATOMIKAL no procederás hasta contar con una orden de compra formal que haga referencia a este presupuesto y firma del mismo</td>
+												<td class="delete">
+													<button class="borrar">X</button>
+												</td>
+											</tr>
+											<tr>
+												<td>La firma de la presente propuesta señala la conformidad del cliente firmante con los alcances, procedimientos, términos y condiciones que aquí se describen.</td>
+												<td class="delete">
+													<button class="borrar">X</button>
+												</td>
+											</tr>
+											<tr>
+												<td>ATOMIKAL no procederás hasta contar con una orden de compra formal que haga referencia a este presupuesto y firma del mismo</td>
+												<td class="delete">
+													<button class="borrar">X</button>
+												</td>
+											</tr>
+											<tr>
+												<td>La firma de la presente propuesta señala la conformidad del cliente firmante con los alcances, procedimientos, términos y condiciones que aquí se describen.</td>
+												<td class="delete">
+													<button class="borrar">X</button>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</section>
+						</article>
+						<input type="submit" value="Guardar" class="button button-orange1 button-large" /> </section>
+				</div>
+			</section>
+		</section>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js" type="text/javascript"></script>
+		<script type="text/javascript" src="js/picturefill.min.js" async></script>
+		<script type="text/javascript" src="js/general.js" async defer></script>
+		<script src="js/jquery.dd.min.js"></script>
+	</body>
+</html>

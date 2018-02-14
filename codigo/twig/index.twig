@@ -1,0 +1,66 @@
+{% extends "estructura.twig" %}
+
+{% set seccion = "index" %}
+{% set info = datos.portada %}
+
+{% block css %}
+	<link rel="stylesheet" href="css/slick.css" />
+	<link rel="stylesheet" href="css/{{ seccion }}.css" media="screen" title="estilo">
+{% endblock %}
+
+{% block encabezado %}
+{% endblock %}
+
+{% block cuerpo %}
+ <section id="logina">
+	<div class="user"><img src="img/icons/user.png"></div>
+
+	<article class="sign">
+		<form class="formulario" id="login" action="inicio.html">
+			<div class="input email-usuario">
+
+				<svg version="1.1" class="key-path" id="msg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="29" height="24" viewBox="0 0 31.75 24.5" enable-background="new 0 0 31.75 24.5" xml:space="preserve">
+					<path class="key-path" fill="none" stroke="#000000" stroke-width="0.8" stroke-miterlimit="10" d="M3.524,5.625c0-0.813,0.122-1.083,0.913-1.074
+			c1.125,0.014,16.355,0.011,23.272-0.01c0.296-0.001,0.75,0.042,0.75,0.917c0,1.708,0,13.885,0,13.885s0,0.573-0.959,0.573
+			c-1.292,0-23.156,0-23.156,0s-0.802,0-0.802-0.651C3.542,18.182,3.524,5.625,3.524,5.625l0.192-0.139L16,14.208l12.563-9.042"/>
+ 				</svg>
+
+				<input id="username" class="campo" type="text" placeholder="Ejemplo@correo.com" name="nombre" />
+				<div class="bar"></div>
+			</div>
+			<div class="input clave-pass">
+				<input id="password" class="campo" type="password" placeholder="·············" name="pass" />
+				<div class="bar"></div>
+
+				<svg version="1.1" id="candado" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="24px" viewBox="0 0 22.833 24.5" enable-background="new 0 0 22.833 24.5" xml:space="preserve">
+					<path class="key-path" fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#000000" stroke-width="1.4" stroke-miterlimit="10" d="
+							M5.979,10.688V5.531c0,0,0.719-4.25,5.438-4.438s5.656,4.797,5.656,4.797c0.094,3.734,0.283,4.924-0.313,4.924
+							c0,0,2.688-0.131,2.688,1.512c0,1.338,0.046,7.362,0,10.018c-0.009,0.51-0.5,1.313-1.563,1.313s-9.281,0.163-12.781,0
+							c-0.773-0.036-1.48-0.699-1.5-1.344c-0.031-1,0-10.063,0-10.063s0.031-1.375,1.937-1.406s11.814-0.03,11.814-0.03"/>
+				</svg>
+
+			</div>
+			<div id="submit">
+				<input id="submit-button" type="submit" class="enviar" value="INICIAR SESIÓN" name="" />
+				 
+			</div>
+		</form>
+	</article>
+
+	<a href="#" class="recordatorio" title="¿Olvidaste su contraseña?">¿Olvidaste tu contraseña?</a>
+
+</section>
+
+<aside class="logo-atk">
+	<a href="http://www.atomikal.com" target="_blank"><img src="img/logo-atk-v1.png" alt="atomikal" /></a>
+</aside>
+{% endblock %}
+
+ 
+{% block js %}
+	<script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+	
+	<script src="js/{{ seccion }}.js" defer></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+{% endblock %}

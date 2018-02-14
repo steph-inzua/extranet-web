@@ -1,0 +1,128 @@
+
+/* line 297 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\slick.styl */
+
+/* line 1 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\node_modules\stylus\lib\functions\index.styl */
+
+/* line 1 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\slick.styl */
+/* Slider */
+
+/* line 2 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\slick.styl */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* line 21 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\slick.styl */
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 31 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\slick.styl */
+.slick-list:focus {
+  outline: none;
+}
+
+/* line 35 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\slick.styl */
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+/* line 41 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\slick.styl */
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 51 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\slick.styl */
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+}
+
+/* line 59 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\slick.styl */
+.slick-track:before,
+.slick-track:after {
+  display: table;
+  content: '';
+}
+
+/* line 66 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\slick.styl */
+.slick-track:after {
+  clear: both;
+}
+
+/* line 70 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\slick.styl */
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+/* line 75 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\slick.styl */
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+
+/* line 83 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\slick.styl */
+[dir='rtl'] .slick-slide {
+  float: right;
+}
+
+/* line 87 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\slick.styl */
+.slick-slide img {
+  display: block;
+}
+
+/* line 91 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\slick.styl */
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+/* line 95 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\slick.styl */
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+/* line 99 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\slick.styl */
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+/* line 103 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\slick.styl */
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+/* line 107 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\slick.styl */
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+/* line 115 : D:\Atomikal\Atomikal Extranet\Software\Extranet-atomikal.git\codigo\stylus\slick.styl */
+.slick-arrow.slick-hidden {
+  display: none;
+}
